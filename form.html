@@ -9,23 +9,19 @@
 <body>
 	<header class="page-header">
 		<div class="page-header__logo">
-			<a href="#"><img class="main-logo main-logo--small" src="" width="50" height="20" alt="Mishka"></a>
+			<a href="#"><img class="main-logo  main-logo--small" src="" width="50" height="20" alt="Mishka"></a>
 		</div>
+		<button class="page-header__menu-toggle" type="button">Открыть меню</button>
 		<nav class="main-nav  main-nav--closed  main-nav--nojs">
-			<button class="main-nav__toggle" type="button">Открыть меню</button>
 			<div class="main-nav__wrapper">
 				<ul class="main-nav__list">
 					<li class="main-nav__item"><a href="#">Каталог товаров</a></li>
 					<li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
-				</ul>
-			</div>
-			<div class="main-nav__user-panel">
-				<ul class="main-nav__user-list">
-					<li class="main-nav__item  main-nav__search">
-						<button class="main-nav__search-button" type="button">Поиск по сайту</button>
+					<li class="main-nav__item main-nav__search">
+						<a href="" class="main-nav__search-button">Поиск по сайту</a>
 					</li>
-					<li class="main-nav__item  main-nav__basket  basket">
-						<a href="#" class="main-nav__basket-link">Корзина: <span class="basket__condition">пока пуста</span></a>
+					<li class="main-nav__item  main-nav__basket basket">
+						<a href="#" class="main-nav__basket-link">Корзина: <span class="main-nav__basket-condition">пока пуста</span></a>
 					</li>
 				</ul>
 			</div>
@@ -35,56 +31,48 @@
 	<section class="page-form">
 		<div class="page-form__intro">
 			<h1 class="page-form__title">Вязание на заказ</h1>
-			<p class="page-form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
 		</div>
+		<p class="page-form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
 		<form class="page-form__form" action="#" method="get">
 			<fieldset class="page-form__form-block  form-block">
 				<legend class="form-block__title">Тип</legend>
 				<ul class="form-block__radio-list">
-					<li class="form-block__radio-item-wrapper">
-						<label class="form-block__radio-item">
-							<input type="radio" class="form-block__good-type-input" name="good-type" checked> Аксессуар для интерьера
-						</label>
+					<li class="form-block__radio-item">
+						<input type="radio" id="form-block__product-accessories-radio" class="form-block__product-type-input" name="product-type" checked>
+						<label class="form-block__radio-label" for="form-block__product-accessories-radio">Аксессуар для интерьера</label>
 					</li>
-					<li class="form-block__radio-item-wrapper">
-						<label class="form-block__radio-item">
-							<input type="radio" class="form-block__good-type-input" name="good-type"> Детская игрушка
-						</label>
+					<li class="form-block__radio-item">
+						<input type="radio" id="form-block__product-toy-radio" class="form-block__product-type-input" name="product-type">
+						<label class="form-block__radio-label" for="form-block__product-toy-radio">Детская игрушка</label>
 					</li>
 				</ul>
 			</fieldset>
 			<fieldset class="page-form__form-block  form-block">
 				<legend class="form-block__title">Цвет</legend>
 				<ul class="form-block__checkbox-list">
-					<li class="form-block__checkbox-item-wrapper">
-						<label class="form-block__checkbox-item">
-							<input type="checkbox" class="form-block__color-input" name="good-color-white" checked> Белый
-						</label>
+					<li class="form-block__checkbox-item">
+						<input type="checkbox" class="form-block__checkbox-input" name="product-color-white" id="product-color-white" checked>
+						<label class="form-block__checkbox-label" for="product-color-white"> Белый</label>
 					</li>
-					<li class="form-block__checkbox-item-wrapper">
-						<label class="form-block__checkbox-item">
-							<input type="checkbox" class="form-block__color-input" name="good-color-gray" checked> Серый
-						</label>
+					<li class="form-block__checkbox-item">
+						<input type="checkbox" class="form-block__checkbox-input" name="product-color-gray" id="product-color-gray" checked>
+						<label class="form-block__checkbox-label" for="product-color-gray"> Серый</label>
 					</li>
-					<li class="form-block__checkbox-item-wrapper">
-						<label class="form-block__checkbox-item">
-							<input type="checkbox" class="form-block__color-input" name="good-color-tiffany"> "Тиффани"
-						</label>
+					<li class="form-block__checkbox-item">
+						<input type="checkbox" class="form-block__checkbox-input" name="product-color-tiffany" id="product-color-tiffany">
+						<label class="form-block__checkbox-label" for="product-color-tiffany"> "Тиффани"</label>
 					</li>
-					<li class="form-block__checkbox-item-wrapper">
-						<label class="form-block__checkbox-item">
-							<input type="checkbox" class="form-block__color-input" name="good-color-black"> Черный
-						</label>
+					<li class="form-block__checkbox-item">
+						<input type="checkbox" class="form-block__checkbox-input" name="product-color-black" id="product-color-black">
+						<label class="form-block__checkbox-label" for="product-color-black"> Черный</label>
 					</li>
-					<li class="form-block__checkbox-item-wrapper">
-						<label class="form-block__checkbox-item">
-							<input type="checkbox" class="form-block__color-input" name="good-color-pink"> Розовый
-						</label>
+					<li class="form-block__checkbox-item">
+						<input type="checkbox" class="form-block__checkbox-input" name="product-color-pink" id="product-color-pink">
+						<label class="form-block__checkbox-label" for="product-color-pink"> Розовый</label>
 					</li>
-					<li class="form-block__checkbox-item-wrapper">
-						<label class="form-block__checkbox-item">
-							<input type="checkbox" class="form-block__color-input" name="good-color-orange"> Оранжевый
-						</label>
+					<li class="form-block__checkbox-item">
+						<input type="checkbox" class="form-block__checkbox-input" name="product-color-orange" id="product-color-orange">
+						<label class="form-block__checkbox-label" for="product-color-orange"> Белый</label>
 					</li>
 				</ul>
 			</fieldset>
@@ -113,21 +101,15 @@
 			</fieldset>
 			<fieldset class="page-form__form-block  form-block">
 				<legend class="form-block__title">Тел</legend>
-				<label class="form-block__tel-item">
-					<input type="tel" class="form-block__tel-input" name="tel" placeholder="+7 XXX XX XX">
-				</label>
+				<input type="tel" class="form-block__tel-input" name="tel" placeholder="+7 XXX XX XX">
 			</fieldset>
 			<fieldset class="page-form__form-block  form-block">
 				<legend class="form-block__title">E-mail</legend>
-				<label class="form-block__email-item">
-					<input type="email" class="form-block__email-input" name="email" placeholder="Ваш Email">
-				</label>
+				<input type="email" class="form-block__email-input" name="email" placeholder="Ваш Email">
 			</fieldset>
 			<fieldset class="page-form__form-block  form-block">
 				<legend class="form-block__title">Доп</legend>
-				<label class="form-block__wishes-item">
-					<input type="textarea" class="form-block__wishes-input" name="wishes" placeholder="Опишите все ваши пожелания к заказу">
-				</label>
+				<textarea class="form-block__wishes-input" name="wishes" placeholder="Опишите все ваши пожелания к заказу"></textarea>
 			</fieldset>
 			<p class="page-form__require-message">Все поля обязательны для заполнения</p>
 
@@ -136,10 +118,10 @@
 	</section>
 
 	<footer class="page-footer">
-		<span class="page-footer__social social-links">
-			<a class="page-footer__social-inst social-links__inst" href="#">Мы в Инстаграме</a>
-			<a class="page-footer__social-fb social-links__fb" href="#">Мы на Фейсбуке</a>
-			<a class="page-footer__social-tw social-links__tw" href="#"> Мы в Твиттере</a>
+		<span class="page-footer__social">
+			<a class="page-footer__social-btn page-footer__social-btn--inst" href="#">Мы в Инстаграме</a>
+			<a class="page-footer__social-btn page-footer__social-btn--fb" href="#">Мы на Фейсбуке</a>
+			<a class="page-footer__social-btn page-footer__social-btn--tw" href="#"> Мы в Твиттере</a>
 		</span>
 		<span class="page-footer__developer">Разработано <a href="#">HTML Academy</a></span>
 	</footer>
