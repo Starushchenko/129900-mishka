@@ -2,129 +2,130 @@
 <html lang="ru">
 
 <head>
-	<meta charset="utf-8">
-	<title>Форма заказа</title>
+    <meta charset="utf-8">
+    <title>Форма заказа</title>
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-	<header class="page-header">
-		<div class="page-header__logo">
-			<a href="#"><img class="main-logo  main-logo--small" src="" width="50" height="20" alt="Mishka"></a>
-		</div>
-		<button class="page-header__menu-toggle" type="button">Открыть меню</button>
-		<nav class="main-nav  main-nav--closed  main-nav--nojs">
-			<div class="main-nav__wrapper">
-				<ul class="main-nav__list">
-					<li class="main-nav__item"><a href="#">Каталог товаров</a></li>
-					<li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
-					<li class="main-nav__item main-nav__search">
-						<a href="" class="main-nav__search-button">Поиск по сайту</a>
-					</li>
-					<li class="main-nav__item  main-nav__basket basket">
-						<a href="#" class="main-nav__basket-link">Корзина: <span class="main-nav__basket-condition">пока пуста</span></a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-	</header>
+    <header class="page-header">
+        <div class="page-header__logo">
+            <a href="#"><img class="main-logo  main-logo--small" src="" width="50" height="20" alt="Mishka"></a>
+        </div>
+        <button class="page-header__menu-toggle" type="button">Открыть меню</button>
+        <nav class="main-nav  main-nav--closed  main-nav--nojs">
+            <div class="main-nav__wrapper">
+                <ul class="main-nav__list">
+                    <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
+                    <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
+                    <li class="main-nav__item main-nav__search">
+                        <a href="" class="main-nav__search-button">Поиск по сайту</a>
+                    </li>
+                    <li class="main-nav__item  main-nav__basket basket">
+                        <a href="#" class="main-nav__basket-link">Корзина: <span class="main-nav__basket-condition">пока пуста</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-	<section class="page-form">
-		<div class="page-form__intro">
-			<h1 class="page-form__title">Вязание на заказ</h1>
-		</div>
-		<p class="page-form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-		<form class="page-form__form" action="#" method="get">
-			<fieldset class="page-form__form-block  form-block">
-				<legend class="form-block__title">Тип</legend>
-				<ul class="form-block__radio-list">
-					<li class="form-block__radio-item">
-						<input type="radio" id="form-block__product-accessories-radio" class="form-block__product-type-input" name="product-type" checked>
-						<label class="form-block__radio-label" for="form-block__product-accessories-radio">Аксессуар для интерьера</label>
-					</li>
-					<li class="form-block__radio-item">
-						<input type="radio" id="form-block__product-toy-radio" class="form-block__product-type-input" name="product-type">
-						<label class="form-block__radio-label" for="form-block__product-toy-radio">Детская игрушка</label>
-					</li>
-				</ul>
-			</fieldset>
-			<fieldset class="page-form__form-block  form-block">
-				<legend class="form-block__title">Цвет</legend>
-				<ul class="form-block__checkbox-list">
-					<li class="form-block__checkbox-item">
-						<input type="checkbox" class="form-block__checkbox-input" name="product-color-white" id="product-color-white" checked>
-						<label class="form-block__checkbox-label" for="product-color-white"> Белый</label>
-					</li>
-					<li class="form-block__checkbox-item">
-						<input type="checkbox" class="form-block__checkbox-input" name="product-color-gray" id="product-color-gray" checked>
-						<label class="form-block__checkbox-label" for="product-color-gray"> Серый</label>
-					</li>
-					<li class="form-block__checkbox-item">
-						<input type="checkbox" class="form-block__checkbox-input" name="product-color-tiffany" id="product-color-tiffany">
-						<label class="form-block__checkbox-label" for="product-color-tiffany"> "Тиффани"</label>
-					</li>
-					<li class="form-block__checkbox-item">
-						<input type="checkbox" class="form-block__checkbox-input" name="product-color-black" id="product-color-black">
-						<label class="form-block__checkbox-label" for="product-color-black"> Черный</label>
-					</li>
-					<li class="form-block__checkbox-item">
-						<input type="checkbox" class="form-block__checkbox-input" name="product-color-pink" id="product-color-pink">
-						<label class="form-block__checkbox-label" for="product-color-pink"> Розовый</label>
-					</li>
-					<li class="form-block__checkbox-item">
-						<input type="checkbox" class="form-block__checkbox-input" name="product-color-orange" id="product-color-orange">
-						<label class="form-block__checkbox-label" for="product-color-orange"> Белый</label>
-					</li>
-				</ul>
-			</fieldset>
-			<fieldset class="page-form__form-block  form-block">
-				<legend class="form-block__title">ФИО</legend>
-				<ul class="form-block__name-list">
-					<li class="form-block__name-item-wrapper">
-						<label class="form-block__name-item">
-							Имя:
-							<input type="text" class="form-block__name-input" name="name" placeholder="Введите ваше имя">
-						</label>
-					</li>
-					<li class="form-block__name-item-wrapper">
-						<label class="form-block__name-item">
-							Фамилия:
-							<input type="text" class="form-block__name-input" name="surname" placeholder="Укажите фамилию">
-						</label>
-					</li>
-					<li class="form-block__name-item-wrapper">
-						<label class="form-block__name-item">
-							Отчество
-							<input type="text" class="form-block__name-input" name="patronymic" placeholder="Отчество, если желаете">
-						</label>
-					</li>
-				</ul>
-			</fieldset>
-			<fieldset class="page-form__form-block  form-block">
-				<legend class="form-block__title">Тел</legend>
-				<input type="tel" class="form-block__tel-input" name="tel" placeholder="+7 XXX XX XX">
-			</fieldset>
-			<fieldset class="page-form__form-block  form-block">
-				<legend class="form-block__title">E-mail</legend>
-				<input type="email" class="form-block__email-input" name="email" placeholder="Ваш Email">
-			</fieldset>
-			<fieldset class="page-form__form-block  form-block">
-				<legend class="form-block__title">Доп</legend>
-				<textarea class="form-block__wishes-input" name="wishes" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-			</fieldset>
-			<p class="page-form__require-message">Все поля обязательны для заполнения</p>
+    <section class="page-form">
+        <div class="page-form__intro">
+            <h1 class="page-form__title">Вязание на заказ</h1>
+        </div>
+        <p class="page-form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <form class="page-form__form" action="#" method="get">
+            <fieldset class="page-form__form-block  form-block">
+                <legend class="form-block__title">Тип</legend>
+                <ul class="form-block__radio-list">
+                    <li class="form-block__radio-item">
+                        <input type="radio" id="form-block__product-accessories-radio" class="form-block__product-type-input" name="product-type" checked>
+                        <label class="form-block__radio-label" for="form-block__product-accessories-radio">Аксессуар для интерьера</label>
+                    </li>
+                    <li class="form-block__radio-item">
+                        <input type="radio" id="form-block__product-toy-radio" class="form-block__product-type-input" name="product-type">
+                        <label class="form-block__radio-label" for="form-block__product-toy-radio">Детская игрушка</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="page-form__form-block  form-block">
+                <legend class="form-block__title">Цвет</legend>
+                <ul class="form-block__checkbox-list">
+                    <li class="form-block__checkbox-item">
+                        <input type="checkbox" class="form-block__checkbox-input" name="product-color-white" id="product-color-white" checked>
+                        <label class="form-block__checkbox-label" for="product-color-white"> Белый</label>
+                    </li>
+                    <li class="form-block__checkbox-item">
+                        <input type="checkbox" class="form-block__checkbox-input" name="product-color-gray" id="product-color-gray" checked>
+                        <label class="form-block__checkbox-label" for="product-color-gray"> Серый</label>
+                    </li>
+                    <li class="form-block__checkbox-item">
+                        <input type="checkbox" class="form-block__checkbox-input" name="product-color-tiffany" id="product-color-tiffany">
+                        <label class="form-block__checkbox-label" for="product-color-tiffany"> "Тиффани"</label>
+                    </li>
+                    <li class="form-block__checkbox-item">
+                        <input type="checkbox" class="form-block__checkbox-input" name="product-color-black" id="product-color-black">
+                        <label class="form-block__checkbox-label" for="product-color-black"> Черный</label>
+                    </li>
+                    <li class="form-block__checkbox-item">
+                        <input type="checkbox" class="form-block__checkbox-input" name="product-color-pink" id="product-color-pink">
+                        <label class="form-block__checkbox-label" for="product-color-pink"> Розовый</label>
+                    </li>
+                    <li class="form-block__checkbox-item">
+                        <input type="checkbox" class="form-block__checkbox-input" name="product-color-orange" id="product-color-orange">
+                        <label class="form-block__checkbox-label" for="product-color-orange"> Белый</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="page-form__form-block  form-block">
+                <legend class="form-block__title">ФИО</legend>
+                <ul class="form-block__name-list">
+                    <li class="form-block__name-item-wrapper">
+                        <label class="form-block__name-item">
+                            Имя:
+                            <input type="text" class="form-block__name-input" name="name" placeholder="Введите ваше имя">
+                        </label>
+                    </li>
+                    <li class="form-block__name-item-wrapper">
+                        <label class="form-block__name-item">
+                            Фамилия:
+                            <input type="text" class="form-block__name-input" name="surname" placeholder="Укажите фамилию">
+                        </label>
+                    </li>
+                    <li class="form-block__name-item-wrapper">
+                        <label class="form-block__name-item">
+                            Отчество
+                            <input type="text" class="form-block__name-input" name="patronymic" placeholder="Отчество, если желаете">
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="page-form__form-block  form-block">
+                <legend class="form-block__title">Тел</legend>
+                <input type="tel" class="form-block__tel-input" name="tel" placeholder="+7 XXX XX XX">
+            </fieldset>
+            <fieldset class="page-form__form-block  form-block">
+                <legend class="form-block__title">E-mail</legend>
+                <input type="email" class="form-block__email-input" name="email" placeholder="Ваш Email">
+            </fieldset>
+            <fieldset class="page-form__form-block  form-block">
+                <legend class="form-block__title">Доп</legend>
+                <textarea class="form-block__wishes-input" name="wishes" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </fieldset>
+            <p class="page-form__require-message">Все поля обязательны для заполнения</p>
 
-			<input type="submit" class="page-form__submit button" value="Отправить заказ">
-		</form>
-	</section>
+            <input type="submit" class="page-form__submit button" value="Отправить заказ">
+        </form>
+    </section>
 
-	<footer class="page-footer">
-		<span class="page-footer__social">
+    <footer class="page-footer">
+        <span class="page-footer__social">
 			<a class="page-footer__social-btn page-footer__social-btn--inst" href="#">Мы в Инстаграме</a>
 			<a class="page-footer__social-btn page-footer__social-btn--fb" href="#">Мы на Фейсбуке</a>
 			<a class="page-footer__social-btn page-footer__social-btn--tw" href="#"> Мы в Твиттере</a>
 		</span>
-		<span class="page-footer__developer">Разработано <a href="#">HTML Academy</a></span>
-	</footer>
+        <span class="page-footer__developer">Разработано <a href="#">HTML Academy</a></span>
+    </footer>
 </body>
 
 </html>
