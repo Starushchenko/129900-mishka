@@ -32,7 +32,6 @@
 .main-nav__list {
     margin: 0;
     padding: 0;
-    display: none;
 }
 
 .main-nav__item {
@@ -45,7 +44,6 @@
 .main-nav__item a {
     text-decoration: none;
     color: $header-text-color;
-    font-weight: bold;
     font-family: "Open Sans Bold", sans-serif;
     font-size: 17px;
     line-height: 24px;
