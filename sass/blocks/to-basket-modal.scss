@@ -1,1 +1,71 @@
-.to-basket-modal {}
+.to-basket-modal {
+    @include mobile-container;
+    border-top: 1px solid #c7c7c7;
+    text-align: center;
+}
+
+.to-basket-modal__title {
+    font-family: Open Sans Bold, sans-serif;
+    font-size: 25px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: $header-text-color;
+}
+
+.to-basket-modal__size-selection-form-legend {
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.to-basket-modal__form-sizes-list {
+    margin: 0;
+    padding: 0;
+}
+
+.to-basket-modal__form-size-wrapper {
+    list-style: none;
+    width: 82px;
+    display: inline-block;
+    position: relative;
+    margin-right: 2px;
+    margin-bottom: 30px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.to-basket-modal__form-size-input {
+    display: none;
+}
+
+.to-basket-modal__form-size-item {
+    font-family: Open Sans Bold, sans-serif;
+    font-size: 17px;
+    line-height: 16px;
+}
+
+.to-basket-modal__form-size-item::before {
+    content: "";
+    width: 82px;
+    height: 52px;
+    border: 2px solid #ececec;
+    position: absolute;
+    left: 0;
+    top: -18px;
+}
+
+.to-basket-modal__form-size-input:checked ~ .to-basket-modal__form-size-item::before {
+    content: "";
+    width: 82px;
+    height: 52px;
+    border: 2px solid #63d1bb;
+    position: absolute;
+    left: 0;
+    top: -18px;
+}
+
+.to-basket-modal__form-submit-btn {
+    background-color: #63d1bb;
+    color: #ffffff;
+    border: none;
+}

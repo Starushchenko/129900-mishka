@@ -1,0 +1,39 @@
+.product-card {
+    min-width: 260px;
+    text-align: left;
+    border: 1px solid #ececec;
+    margin-bottom: 30px;
+}
+
+.product-card__title {
+    font-family: Open Sans Bold, sans-serif;
+    font-size: 17px;
+    line-height: 24px;
+    margin: 25px 28px 15px;
+    color: $header-text-color;
+}
+
+.product-card__properties {
+    font-size: 13px;
+    margin: 0 28px;
+    border-bottom: 1px solid #ececec;
+    padding-bottom: 25px;
+    margin-bottom: 10px;
+}
+
+.product-card__price-wrapper {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.product-card__price {
+    font-family: Open Sans Bold, sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    margin: 0 28px;
+}
+
+.product-card__to-basket-btn {
+    display: inline-block;
+    margin: 0 28px 0 76px;
+}

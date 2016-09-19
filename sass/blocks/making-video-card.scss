@@ -1,0 +1,44 @@
+.making-video-card {
+    min-width: 260px;
+    text-align: left;
+    border: 1px solid #ececec;
+    margin-bottom: 30px;
+}
+
+.making-video-card__title-wrapper {
+    padding: 28px 0 28px 34px;
+}
+
+.making-video-card__title {
+    font-family: Open Sans Bold, sans-serif;
+    font-size: 17px;
+    line-height: 24px;
+    margin: 25px 28px 15px;
+    color: $header-text-color;
+}
+
+.making-video-card__video-wrapper {
+    background: url("../../img/icon-play.svg") no-repeat 50% 50%;
+    z-index: 1;
+}
+
+.making-video-card__video {
+    position: relative;
+    display: block;
+    z-index: -1;
+}
+
+.making-video-card__description {
+    padding: 0 28px 0 40px;
+    font-size: 13px;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+.making-video-card__order-button {
+    text-decoration: none;
+    display: block;
+    margin: 0 34px;
+    width: auto;
+    margin-bottom: 20px;
+}
