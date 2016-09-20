@@ -1,0 +1,50 @@
+@import "../global/variables.scss";
+@import "../global/mixins.scss";
+
+.reviews {
+    @include mobile-container;
+}
+
+.reviews__title {
+    @include bold;
+    color: $header-text-color;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.reviews__item-content {
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.reviews__item-author-name {
+    font-size: 18px;
+    @include bold;
+    color: $header-text-color;
+}
+
+.reviews__item-author-nickname {
+    font-size: 18px;
+    font-family: "Open Sans", "Arial", sans-serif;
+}
+
+.reviews__prev,
+.reviews__next {
+    width: 128px;
+    height: 50px;
+    display: inline-block;
+    border: 1px solid #ececec;
+    background-color: #ffffff;
+}
+
+.reviews__prev {
+    background: url(../img/icon-left-arrow.svg) no-repeat #ffffff 50% 50%;
+}
+
+.reviews__next {
+    background: url(../img/icon-right-arrow.svg) no-repeat #ffffff 50% 50%;
+}
+
+.reviews__write-button {
+    width: 100%;
+}

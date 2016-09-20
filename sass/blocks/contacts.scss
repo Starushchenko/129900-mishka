@@ -1,0 +1,40 @@
+@import "../global/variables.scss";
+@import "../global/mixins.scss";
+
+.contacts {
+    @include mobile-container;
+}
+
+.contacts__title {
+    @include bold;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.contacts__info {
+    width: 100%;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.contacts__method {
+    min-width: 77px;
+    vertical-align: top;
+    padding-bottom: 30px;
+}
+
+.contacts__value {
+    padding-bottom: 30px;
+}
+
+.contacts__value a {
+    color: $main-text-color;
+    text-decoration: none;
+    border-bottom: 1px solid #62d1ba;
+    vertical-align: top;
+}
+
+.contacts__map-wrapper {
+    width: 320px;
+    margin-left: -30px;
+}

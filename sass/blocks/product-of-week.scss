@@ -1,0 +1,58 @@
+@import "../global/variables.scss";
+@import "../global/mixins.scss";
+
+.product-of-week {
+    background: $main-bg-color;
+    @include mobile-container;
+    padding-top: 30px;
+}
+
+.product-of-week__name {
+    @include bold;
+    font-size: 25px;
+    line-height: 30px;
+    color: $header-text-color;
+}
+
+.product-of-week__title {
+    color: #63d1bb;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 16px;
+}
+
+.product-of-week__description {
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.product-of-week__properties {
+    font-size: 15px;
+    line-height: 20px;
+    width: 100%;
+}
+
+.product-of-week__properties-row {
+    border-bottom: 1px solid #ececec;
+}
+
+.product-of-week__properties-parameter {
+    padding: 12px 0;
+}
+
+.product-of-week__photo-wrapper {
+    margin-top: 30px;
+}
+
+.product-of-week__price {
+    font-weight: bold;
+    @include bold;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.product-of-week__button {
+    width: 100%;
+}

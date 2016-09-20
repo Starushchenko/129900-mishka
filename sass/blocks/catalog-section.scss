@@ -1,0 +1,23 @@
+@import "../global/variables.scss";
+@import "../global/mixins.scss";
+
+.catalog-section {
+    @include mobile-container;
+}
+
+.catalog-section__intro {
+    background-color: #f1f1f1;
+    width: 320px;
+    margin-left: -30px;
+    margin-bottom: 20px;
+    min-height: 177px;
+    padding: 75px 36px;
+    box-sizing: border-box;
+}
+
+.catalog-section__title {
+    @include bold;
+    font-size: 27px;
+    line-height: 30px;
+    color: $header-text-color;
+}
