@@ -1,0 +1,33 @@
+@import "../global/variables.scss";
+@import "../global/mixins.scss";
+
+.page-header {
+    width: 320px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.page-header__logo {
+    padding: 22px 0;
+    display: flex;
+    border-bottom: 1px solid #ececec;
+}
+
+.page-header__logo-link {
+    background-image: url(../img/logo-mobile.svg);
+    width: 86px;
+    height: 36px;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.page-header__menu-toggle {
+    background-image: url(../img/icon-menu-open.svg);
+    height: 14px;
+    width: 20px;
+    border: none;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    background-color: #ffffff;
+}

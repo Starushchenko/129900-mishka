@@ -1,0 +1,19 @@
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin mobile-container {
+    width: 320px;
+    margin: 0 auto;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+@mixin bold {
+    font-family: "Open Sans Bold", "Arial", sans-serif;
+    font-weight: bold;
+}

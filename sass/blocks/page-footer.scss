@@ -1,0 +1,51 @@
+@import "../global/variables.scss";
+@import "../global/mixins.scss";
+
+.page-footer {
+    @include mobile-container;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.page-footer__social {
+    border-bottom: 1px solid #e5e5e5;
+    display: block;
+    padding: 30px 28px 30px 40px;
+}
+
+.page-footer__social-btn {
+    margin-right: 40px;
+}
+
+.page-footer__social-btn--inst {
+    font-size: 0;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: url(../img/icon-insta.svg);
+}
+
+.page-footer__social-btn--fb {
+    font-size: 0;
+    display: inline-block;
+    width: 15px;
+    height: 28px;
+    background: url(../img/icon-fb.svg);
+}
+
+.page-footer__social-btn--tw {
+    font-size: 0;
+    display: inline-block;
+    width: 24px;
+    height: 21px;
+    background: url(../img/icon-twitter.svg);
+}
+
+.page-footer__developer {
+    display: block;
+    @include bold;
+    font-size: 19px;
+    line-height: 18px;
+    color: $header-text-color;
+    padding: 30px;
+}

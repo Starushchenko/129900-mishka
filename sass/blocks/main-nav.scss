@@ -1,0 +1,23 @@
+@import "../global/variables.scss";
+@import "../global/mixins.scss";
+
+.main-nav__list {
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+.main-nav__item {
+    list-style: none;
+    border-bottom: 1px solid #ececec;
+    text-align: center;
+    padding: 28px 0;
+}
+
+.main-nav__item a {
+    text-decoration: none;
+    color: $header-text-color;
+    @include bold;
+    font-size: 17px;
+    line-height: 24px;
+}
