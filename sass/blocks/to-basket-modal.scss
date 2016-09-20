@@ -1,3 +1,6 @@
+@import "global/variables.scss";
+@import "global/mixins.scss";
+
 .to-basket-modal {
     @include mobile-container;
     border-top: 1px solid #c7c7c7;
@@ -5,7 +8,7 @@
 }
 
 .to-basket-modal__title {
-    font-family: Open Sans Bold, sans-serif;
+    @include bold;
     font-size: 25px;
     line-height: 30px;
     text-transform: uppercase;
@@ -39,7 +42,7 @@
 }
 
 .to-basket-modal__form-size-item {
-    font-family: Open Sans Bold, sans-serif;
+    @include bold;
     font-size: 17px;
     line-height: 16px;
 }

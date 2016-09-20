@@ -1,3 +1,6 @@
+@import "global/variables.scss";
+@import "global/mixins.scss";
+
 .product-card {
     min-width: 260px;
     text-align: left;
@@ -6,7 +9,7 @@
 }
 
 .product-card__title {
-    font-family: Open Sans Bold, sans-serif;
+    @include bold;
     font-size: 17px;
     line-height: 24px;
     margin: 25px 28px 15px;
@@ -27,7 +30,7 @@
 }
 
 .product-card__price {
-    font-family: Open Sans Bold, sans-serif;
+    @include bold;
     font-size: 15px;
     line-height: 24px;
     margin: 0 28px;

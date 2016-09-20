@@ -1,3 +1,6 @@
+@import "global/variables.scss";
+@import "global/mixins.scss";
+
 .page-footer {
     @include mobile-container;
     background-color: #f1f1f1;
@@ -19,7 +22,7 @@
     display: inline-block;
     width: 22px;
     height: 22px;
-    background: url(../../img/icon-insta.svg);
+    background: url(../img/icon-insta.svg);
 }
 
 .page-footer__social-btn--fb {
@@ -27,7 +30,7 @@
     display: inline-block;
     width: 15px;
     height: 28px;
-    background: url(../../img/icon-fb.svg);
+    background: url(../img/icon-fb.svg);
 }
 
 .page-footer__social-btn--tw {
@@ -35,12 +38,12 @@
     display: inline-block;
     width: 24px;
     height: 21px;
-    background: url(../../img/icon-twitter.svg);
+    background: url(../img/icon-twitter.svg);
 }
 
 .page-footer__developer {
     display: block;
-    font-family: Open Sans Bold, sans-serif;
+    @include bold;
     font-size: 19px;
     line-height: 18px;
     color: $header-text-color;

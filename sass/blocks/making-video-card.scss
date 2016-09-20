@@ -1,3 +1,6 @@
+@import "global/variables.scss";
+@import "global/mixins.scss";
+
 .making-video-card {
     min-width: 260px;
     text-align: left;
@@ -10,7 +13,7 @@
 }
 
 .making-video-card__title {
-    font-family: Open Sans Bold, sans-serif;
+    @include bold;
     font-size: 17px;
     line-height: 24px;
     margin: 25px 28px 15px;
@@ -18,7 +21,7 @@
 }
 
 .making-video-card__video-wrapper {
-    background: url("../../img/icon-play.svg") no-repeat 50% 50%;
+    background: url("../img/icon-play.svg") no-repeat 50% 50%;
     z-index: 1;
 }
 

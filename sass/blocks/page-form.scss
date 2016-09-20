@@ -1,3 +1,6 @@
+@import "global/variables.scss";
+@import "global/mixins.scss";
+
 .page-form {
     @include mobile-container;
 }
@@ -12,7 +15,7 @@
 }
 
 .page-form__title {
-    font-family: Open Sans Bold, sans-serif;
+    @include bold;
     font-size: 27px;
     line-height: 30px;
     color: $header-text-color;

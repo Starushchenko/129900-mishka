@@ -1,9 +1,12 @@
+@import "global/variables.scss";
+@import "global/mixins.scss";
+
 .reviews {
     @include mobile-container;
 }
 
 .reviews__title {
-    font-family: Open Sans Bold, sans-serif;
+    @include bold;
     color: $header-text-color;
     font-size: 25px;
     line-height: 30px;
@@ -16,14 +19,13 @@
 
 .reviews__item-author-name {
     font-size: 18px;
-    font-weight: bold;
-    font-family: Open Sans Bold, sans-serif;
+    @include bold;
     color: $header-text-color;
 }
 
 .reviews__item-author-nickname {
     font-size: 18px;
-    font-family: Open Sans, sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
 }
 
 .reviews__prev,
@@ -36,11 +38,11 @@
 }
 
 .reviews__prev {
-    background: url(../../img/icon-left-arrow.svg) no-repeat #ffffff 50% 50%;
+    background: url(../img/icon-left-arrow.svg) no-repeat #ffffff 50% 50%;
 }
 
 .reviews__next {
-    background: url(../../img/icon-right-arrow.svg) no-repeat #ffffff 50% 50%;
+    background: url(../img/icon-right-arrow.svg) no-repeat #ffffff 50% 50%;
 }
 
 .reviews__write-button {

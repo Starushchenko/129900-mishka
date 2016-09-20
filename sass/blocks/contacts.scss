@@ -1,9 +1,12 @@
+@import "global/variables.scss";
+@import "global/mixins.scss";
+
 .contacts {
     @include mobile-container;
 }
 
 .contacts__title {
-    font-family: Open Sans Bold;
+    @include bold;
     font-size: 18px;
     line-height: 30px;
 }
