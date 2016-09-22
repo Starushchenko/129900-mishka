@@ -1,20 +1,23 @@
 @import "../global/variables.scss";
 @import "../global/mixins.scss";
 
+
 .page-footer {
     @include mobile-container;
     background-color: #f1f1f1;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-footer__logo {
+    display: none;
 }
 
 .page-footer__social {
     border-bottom: 1px solid #e5e5e5;
     display: block;
     padding: 30px 28px 30px 40px;
-}
-
-.page-footer__social-btn {
-    margin-right: 40px;
 }
 
 .page-footer__social-btn--inst {
@@ -31,6 +34,7 @@
     width: 15px;
     height: 28px;
     background: url(../img/icon-fb.svg);
+    margin: 0 40px;
 }
 
 .page-footer__social-btn--tw {
@@ -48,4 +52,31 @@
     line-height: 18px;
     color: $header-text-color;
     padding: 30px;
+}
+
+
+@media ($tablet-width) {
+
+    .page-footer {
+        width: 768px;
+        padding: 0 50px;
+        flex-direction: row;
+        align-items: center;
+        min-height: 142px;
+    }
+
+    .page-footer__logo {
+        display: inline-block;
+        width: 33%;
+    }
+
+    .page-footer__social {
+        width: 34%;
+        border: none;
+    }
+
+    .page-footer__developer {
+        width: 170px;
+        border: none;
+    }
 }

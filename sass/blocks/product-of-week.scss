@@ -56,3 +56,69 @@
 .product-of-week__button {
     width: 100%;
 }
+
+
+
+
+
+@media ($tablet-width) {
+
+    .product-of-week {
+        min-width: 768px;
+        padding: 10px 50px 0;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 55px;
+    }
+
+    .product-of-week__name {
+        font-size: 43px;
+        line-height: 50px;
+        min-width: 500px;
+    }
+
+    .product-of-week__title {
+        display: block;
+        text-align: center;
+        margin: 50px 0 0 58px;
+        width: 100px;
+    }
+
+    .product-of-week__about {
+        width: 50%;
+    }
+
+    .product-of-week__description {
+        font-size: 17px;
+        line-height: 30px;
+        width: 85%;
+        margin-bottom: 30px;
+    }
+
+    .product-of-week__properties {
+        width: 100%;
+    }
+
+    .product-of-week__photo-wrapper {
+        margin-top: 30px;
+        /*------------- Убрать позже -----------*/
+        width: 334px;
+        height: 405px;
+        /*--------------------------------------*/
+    }
+
+    .product-of-week__order-form {
+        width: 45%;
+        margin-top: -138px;
+    }
+
+    .product-of-week__price {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+
+    .product-of-week__button {
+        width: 97%;
+    }
+}
