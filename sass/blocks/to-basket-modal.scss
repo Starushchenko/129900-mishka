@@ -95,56 +95,20 @@
         line-height: 30px;
     }
 
-    .to-basket-modal__form-sizes-list {
-        margin: 0;
-        padding: 0;
-    }
-
     .to-basket-modal__form-size-wrapper {
-        list-style: none;
         width: 104px;
-        display: inline-block;
-        position: relative;
         margin: 30px 7px 50px;
-        &:last-child {
-            margin-right: 0;
-        }
-    }
-
-    .to-basket-modal__form-size-input {
-        display: none;
-    }
-
-    .to-basket-modal__form-size-item {
-        @include bold;
-        font-size: 17px;
-        line-height: 16px;
     }
 
     .to-basket-modal__form-size-item::before {
-        content: "";
         width: 104px;
-        height: 52px;
-        border: 2px solid #ececec;
-        position: absolute;
-        left: 0;
-        top: -18px;
     }
 
     .to-basket-modal__form-size-input:checked ~ .to-basket-modal__form-size-item::before {
-        content: "";
         width: 104px;
-        height: 52px;
-        border: 2px solid #63d1bb;
-        position: absolute;
-        left: 0;
-        top: -18px;
     }
 
     .to-basket-modal__form-submit-btn {
-        background-color: #63d1bb;
-        color: #ffffff;
-        border: none;
         width: 350px;
     }
 }
