@@ -3,9 +3,12 @@
 
 .catalog-section {
     @include mobile-container;
+    display: flex;
+    flex-direction: column;
 }
 
 .catalog-section__intro {
+    @include bold;
     background-color: #f1f1f1;
     width: 320px;
     margin-left: -30px;
@@ -16,8 +19,32 @@
 }
 
 .catalog-section__title {
-    @include bold;
+    text-align: center;
     font-size: 27px;
     line-height: 30px;
     color: $header-text-color;
+}
+
+@media ($tablet-width) {
+
+    .catalog-section {
+        width: 768px;
+        padding: 0 50px;
+    }
+
+    .catalog-section__intro {
+        background-color: #f1f1f1;
+        width: 768px;
+        margin-left: -50px;
+        margin-bottom: 20px;
+        min-height: 177px;
+        padding: 70px 36px;
+        box-sizing: border-box;
+    }
+
+    .catalog-section__title {
+        text-align: center;
+        font-size: 43px;
+        line-height: 50px;
+    }
 }

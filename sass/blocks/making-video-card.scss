@@ -6,6 +6,8 @@
     text-align: left;
     border: 1px solid #ececec;
     margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 .making-video-card__title-wrapper {
@@ -44,4 +46,35 @@
     margin: 0 34px;
     width: auto;
     margin-bottom: 20px;
+}
+
+
+
+@media ($tablet-width) {
+
+    .making-video-card {
+        margin-top: 30px;
+    }
+
+    .making-video-card__title-wrapper {
+        order: 2;
+    }
+
+    .making-video-card__title {
+        font-size: 20px;
+    }
+
+    .making-video-card__video-wrapper {
+        order: 1;
+        min-height: 455px;
+    }
+
+    .making-video-card__description {
+        order: 3;
+    }
+
+    .making-video-card__order-button {
+        margin: 0 42px;
+        order: 4;
+    }
 }
