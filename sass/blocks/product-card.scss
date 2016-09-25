@@ -67,3 +67,46 @@
         margin: 0 28px 0 130px;
     }
 }
+
+
+@media ($dekstop-width) {
+    .product-card {
+        width: 30%;
+        margin: 40px 49px 40px 0;
+        padding-right: 10px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        min-height: 659px;
+        &:nth-child(3n+1) {
+            margin-right: 0;
+        }
+    }
+    .product-card__image-wrapper {
+        width: 100%;
+        /*Временный фон*/
+        background: #444444;
+        /*--------------*/
+        min-height: 462px;
+        margin-bottom: -5px;
+
+    }
+    .product-card__title {
+        font-size: 20px;
+    }
+    .product-card__properties {
+        width: 257px;
+        font-size: 15px;
+        line-height: 30px;
+        min-height: 70px;
+        padding-bottom: 0;
+        margin: 0 33px 0 27px;
+    }
+    .product-card__price {
+        font-size: 17px;
+    }
+    .product-card__to-basket-btn {
+        margin-top: 10px;
+        margin-right: 0;
+    }
+}
