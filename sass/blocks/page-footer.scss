@@ -73,3 +73,26 @@
         border: none;
     }
 }
+
+
+@media ($dekstop-width) {
+    .page-footer {
+        width: 1150px;
+        padding: 0;
+    }
+    .page-footer__logo {
+        width: 30%;
+        text-align: left;
+        padding: 50px;
+        box-sizing: border-box;
+    }
+    .page-footer__developer {
+        width: auto;
+        margin-left: 15px;
+        text-align: right;
+    }
+
+    .page-footer__social-btn--fb {
+        margin: 0 35px;
+    }
+}
