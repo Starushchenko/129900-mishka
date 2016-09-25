@@ -290,3 +290,118 @@
         margin-right: 50px;
     }
 }
+
+
+@media ($dekstop-width) {
+    .form-block {
+        border: none;
+        padding: 60px 0;
+        width: 1150px;
+        margin: 0 0 0 -50px;
+        &:nth-child(2n) {
+            background: #f1f1f1;
+        }
+    }
+    .form-block__fieldset-flex-wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+    .form-block__title {
+        min-width: 175px;
+        margin-left: 50px;
+        text-align: center;
+    }
+    .form-block__radio-item {
+        list-style: none;
+        align-self: flex-start;
+        margin: 0 0 35px 0;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .form-block__product-type-input {
+        display: none;
+    }
+    .form-block__radio-label {
+        font-size: 19px;
+        line-height: 18px;
+        width: auto;
+    }
+    .form-block__radio-label::before {
+        width: 48px;
+        height: 48px;
+        left: -80px;
+        top: -15px;
+    }
+    .form-block__product-type-input:checked ~ .form-block__radio-label::before {
+        width: 48px;
+        height: 48px;
+        left: -80px;
+        top: -15px;
+    }
+    .form-block__checkbox-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .form-block__checkbox-item {
+        list-style: none;
+        width: 245px;
+    }
+    .form-block__checkbox-label {
+        font-size: 19px;
+        line-height: 18px;
+        margin-bottom: 10px;
+    }
+    .form-block__checkbox-label::before {
+        width: 52px;
+        height: 50px;
+    }
+    .form-block__checkbox-input:checked ~ .form-block__checkbox-label::before {
+        width: 52px;
+        height: 50px;
+    }
+    .form-block__name-item-wrapper {
+        list-style: none;
+    }
+    .form-block__name-item {
+        font-size: 19px;
+        line-height: 18px;
+        margin-bottom: 20px;
+        display: flex;
+        width: 700px;
+        flex-direction: row;
+    }
+    .form-block__name-item p {
+        margin-right: 25px;
+    }
+    .form-block__name-input {
+        border: none;
+        border-bottom: 2px solid #000000;
+    }
+    .form-block__tel-input {
+        border: none;
+        border-bottom: 2px solid #000000;
+        font-size: 17px;
+        line-height: 18px;
+        width: 700px;
+        margin-bottom: 20px;
+        background: #f1f1f1;
+    }
+    .form-block__email-input {
+        border: none;
+        border-bottom: 2px solid #000000;
+        font-size: 17px;
+        line-height: 18px;
+        width: 700px;
+        margin-bottom: 20px;
+        background: #f1f1f1;
+    }
+    .form-block__wishes-input {
+        width: 700px;
+        font-size: 17px;
+        line-height: 18px;
+        padding: 15px;
+        margin-right: 50px;
+    }
+}

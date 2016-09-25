@@ -35,6 +35,10 @@
     text-align: center;
 }
 
+.page-form__require-message-tablet {
+    display: none;
+}
+
 
 
 @media ($tablet-width) {
@@ -67,6 +71,10 @@
     }
 
     .page-form__require-message {
+        display: none;
+    }
+
+    .page-form__require-message-tablet {
         display: inline-block;
         font-size: 17px;
         text-align: right;
@@ -86,4 +94,37 @@
         width: 230px;
     }
 }
+
+
+@media ($dekstop-width) {
+
+    .page-form {
+        width: 1150px;
+    }
+
+    .page-form__intro {
+        width: 1150px;
+        margin-left: -50px;
+        min-height: 313px;
+        padding: 60px 36px;
+    }
+
+    .page-form__title {
+        font-size: 53px;
+        line-height: 57px;
+        text-align: center;
+    }
+
+    .page-form__description {
+        margin: 10px 175px;
+    }
+    .page-form__submit-wrapper {
+        display: flex;
+        flex-direction: row;
+        padding: 0 175px;
+
+    }
+
+}
+
 
