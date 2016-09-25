@@ -48,13 +48,11 @@
 @media ($dekstop-width) {
     .catalog-section {
         width: 1150px;
-        padding: 0 50px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
     .catalog-section__intro {
-        background-color: #f1f1f1;
         width: 1150px;
         margin-bottom: 0;
         min-height: 350px;
