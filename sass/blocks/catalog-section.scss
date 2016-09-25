@@ -1,6 +1,5 @@
 @import "../global/variables.scss";
 @import "../global/mixins.scss";
-
 .catalog-section {
     @include mobile-container;
     display: flex;
@@ -26,12 +25,10 @@
 }
 
 @media ($tablet-width) {
-
     .catalog-section {
         width: 768px;
         padding: 0 50px;
     }
-
     .catalog-section__intro {
         background-color: #f1f1f1;
         width: 768px;
@@ -41,7 +38,6 @@
         padding: 70px 36px;
         box-sizing: border-box;
     }
-
     .catalog-section__title {
         text-align: center;
         font-size: 43px;

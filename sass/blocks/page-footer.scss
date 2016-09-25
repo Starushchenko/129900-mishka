@@ -1,7 +1,5 @@
 @import "../global/variables.scss";
 @import "../global/mixins.scss";
-
-
 .page-footer {
     @include mobile-container;
     background-color: #f1f1f1;
@@ -54,9 +52,7 @@
     padding: 30px;
 }
 
-
 @media ($tablet-width) {
-
     .page-footer {
         width: 768px;
         padding: 0 50px;
@@ -64,17 +60,14 @@
         align-items: center;
         min-height: 142px;
     }
-
     .page-footer__logo {
         display: inline-block;
         width: 33%;
     }
-
     .page-footer__social {
         width: 34%;
         border: none;
     }
-
     .page-footer__developer {
         width: 170px;
         border: none;

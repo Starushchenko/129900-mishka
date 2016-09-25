@@ -1,6 +1,5 @@
 @import "../global/variables.scss";
 @import "../global/mixins.scss";
-
 .form-block {
     border: none;
     padding: 0;
@@ -67,21 +66,15 @@
     position: absolute;
     left: -60px;
     top: -10px;
-
-   background: -moz-radial-gradient(center, ellipse cover, #62d1ba 33%, #62d1ba 33%, #ffffff 34%, #ffffff 100%);
-
-     /* FF3.6-15 */
-
-    background: -webkit-radial-gradient(center, ellipse cover, #62d1ba 33%, #62d1ba 33%, #ffffff 34%, #ffffff 100%);
-
+    background: -moz-radial-gradient(center, ellipse cover, #62d1ba 27%, #62d1ba 27%, #ffffff 27%, #ffffff 100%);
+    /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, #62d1ba 27%, #62d1ba 27%, #ffffff 27%, #ffffff 100%);
     /* Chrome10-25,Safari5.1-6 */
-
-    background: radial-gradient(ellipse at center, #62d1ba 33%, #62d1ba 33%, #ffffff 34%, #ffffff 100%);
-
+    background: radial-gradient(ellipse at center, #62d1ba 27%, #62d1ba 27%, #ffffff 27%, #ffffff 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-
-    filter:         progid:DXImageTransform.Microsoft.gradient( startColorstr='#62d1ba', endColorstr='#ffffff', GradientType=1);
+    filter: gradient( startColorstr='#62d1ba', endColorstr='#ffffff', GradientType=1);
 }
+
 .form-block__checkbox-list {
     margin: 0;
     padding: 0;
@@ -185,34 +178,24 @@
     padding: 15px;
 }
 
-
-
-
-
-
 @media ($tablet-width) {
-
     .form-block {
         border: none;
         padding: 60px 0;
         width: 768px;
         margin: 0 0 0 -50px;
-
         &:nth-child(2n) {
             background: #f1f1f1;
         }
     }
-
     .form-block__fieldset-flex-wrapper {
         display: flex;
         flex-direction: row;
     }
-
     .form-block__title {
         min-width: 150px;
         margin-left: 55px;
     }
-
     .form-block__radio-item {
         list-style: none;
         align-self: flex-start;
@@ -221,62 +204,51 @@
             margin-bottom: 0;
         }
     }
-
     .form-block__product-type-input {
         display: none;
     }
-
     .form-block__radio-label {
         font-size: 19px;
         line-height: 18px;
         width: auto;
     }
-
     .form-block__radio-label::before {
         width: 48px;
         height: 48px;
         left: -80px;
         top: -15px;
     }
-
     .form-block__product-type-input:checked ~ .form-block__radio-label::before {
         width: 48px;
         height: 48px;
         left: -80px;
         top: -15px;
     }
-
     .form-block__checkbox-list {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
-
     .form-block__checkbox-item {
         list-style: none;
         width: 245px;
     }
-
     .form-block__checkbox-label {
         font-size: 19px;
         line-height: 18px;
         margin-bottom: 10px;
     }
-
     .form-block__checkbox-label::before {
         width: 52px;
         height: 50px;
     }
-
     .form-block__checkbox-input:checked ~ .form-block__checkbox-label::before {
         width: 52px;
         height: 50px;
     }
-
     .form-block__name-item-wrapper {
         list-style: none;
     }
-
     .form-block__name-item {
         font-size: 19px;
         line-height: 18px;
@@ -285,16 +257,13 @@
         width: 500px;
         flex-direction: row;
     }
-
     .form-block__name-item p {
         margin-right: 25px;
     }
-
     .form-block__name-input {
         border: none;
         border-bottom: 2px solid #000000;
     }
-
     .form-block__tel-input {
         border: none;
         border-bottom: 2px solid #000000;
@@ -304,7 +273,6 @@
         margin-bottom: 20px;
         background: #f1f1f1;
     }
-
     .form-block__email-input {
         border: none;
         border-bottom: 2px solid #000000;
@@ -314,7 +282,6 @@
         margin-bottom: 20px;
         background: #f1f1f1;
     }
-
     .form-block__wishes-input {
         width: 100%;
         font-size: 17px;

@@ -1,6 +1,5 @@
 @import "../global/variables.scss";
 @import "../global/mixins.scss";
-
 .to-basket-modal {
     @include mobile-container;
     border-top: 1px solid #c7c7c7;
@@ -73,41 +72,30 @@
     border: none;
 }
 
-
-
-
-
 @media ($tablet-width) {
-
     .to-basket-modal {
         width: 568px;
         min-height: 336px;
         border: 1px solid #c7c7c7;
     }
-
     .to-basket-modal__title {
         font-size: 30px;
         line-height: 57px;
     }
-
     .to-basket-modal__size-selection-form-legend {
         font-size: 17px;
         line-height: 30px;
     }
-
     .to-basket-modal__form-size-wrapper {
         width: 104px;
         margin: 30px 7px 50px;
     }
-
     .to-basket-modal__form-size-item::before {
         width: 104px;
     }
-
     .to-basket-modal__form-size-input:checked ~ .to-basket-modal__form-size-item::before {
         width: 104px;
     }
-
     .to-basket-modal__form-submit-btn {
         width: 350px;
     }

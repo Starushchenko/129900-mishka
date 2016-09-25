@@ -1,10 +1,15 @@
 @import "../global/variables.scss";
 @import "../global/mixins.scss";
-
 .product-of-week {
     background: $main-bg-color;
     @include mobile-container;
     padding-top: 30px;
+}
+
+.product-of-week__header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .product-of-week__name {
@@ -57,48 +62,43 @@
     width: 100%;
 }
 
-
-
-
-
 @media ($tablet-width) {
-
     .product-of-week {
-        min-width: 768px;
+        width: 768px;
         padding: 10px 50px 0;
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 55px;
     }
 
+    .product-of-week__header {
+        flex-direction: row;
+    }
+
     .product-of-week__name {
         font-size: 43px;
         line-height: 50px;
         min-width: 500px;
+        display: inline-block;
     }
-
     .product-of-week__title {
-        display: block;
         text-align: center;
-        margin: 50px 0 0 58px;
+        display: inline-block;
         width: 100px;
+        margin: 50px 0 0 30px;
     }
-
     .product-of-week__about {
         width: 50%;
     }
-
     .product-of-week__description {
         font-size: 17px;
         line-height: 30px;
         width: 85%;
         margin-bottom: 30px;
     }
-
     .product-of-week__properties {
         width: 100%;
     }
-
     .product-of-week__photo-wrapper {
         margin-top: 30px;
         /*------------- Убрать позже -----------*/
@@ -106,19 +106,55 @@
         height: 405px;
         /*--------------------------------------*/
     }
-
     .product-of-week__order-form {
-        width: 45%;
+        width: 50%;
         margin-top: -138px;
     }
-
     .product-of-week__price {
         font-size: 20px;
         line-height: 24px;
         margin-bottom: 30px;
     }
-
     .product-of-week__button {
         width: 97%;
+    }
+}
+
+
+@media ($dekstop-width) {
+    .product-of-week {
+        width: 1150px;
+        margin-bottom: 95px;
+        min-height: 636px;
+    }
+
+    .product-of-week__header {
+        position: absolute;
+        margin-top: 40px;
+    }
+    .product-of-week__name {
+        font-size: 53px;
+        line-height: 57px;
+        min-width: 500px;
+        order: 2;
+    }
+    .product-of-week__title {
+        margin: 50px 40px 0 38px;
+        width: 100px;
+        order: 1;
+    }
+    .product-of-week__about {
+        width: 32%;
+        margin: 170px 10px 0 180px;
+    }
+    .product-of-week__photo-wrapper {
+        /*------------- Убрать позже -----------*/
+        width: 524px;
+        height: 636px;
+        /*--------------------------------------*/
+    }
+    .product-of-week__order-form {
+        width: 292px;
+        margin-left: 180px;
     }
 }

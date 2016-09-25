@@ -1,6 +1,5 @@
 @import "../global/variables.scss";
 @import "../global/mixins.scss";
-
 .product-card {
     min-width: 260px;
     text-align: left;
@@ -42,22 +41,18 @@
 }
 
 @media ($tablet-width) {
-
     .product-card {
         width: 100%;
         margin: 40px 0 0;
         display: flex;
         min-height: 334px;
     }
-
     .product-card__image-wrapper {
         width: 50%;
     }
-
     .product-card__title {
         font-size: 20px;
     }
-
     .product-card__properties {
         width: 100%;
         font-size: 15px;
@@ -65,11 +60,9 @@
         min-height: 180px;
         padding-bottom: 25px;
     }
-
     .product-card__price {
         font-size: 17px;
     }
-
     .product-card__to-basket-btn {
         margin: 0 28px 0 130px;
     }

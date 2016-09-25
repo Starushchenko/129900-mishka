@@ -1,6 +1,5 @@
 @import "../global/variables.scss";
 @import "../global/mixins.scss";
-
 .page-header {
     width: 320px;
     margin: 0 auto;
@@ -38,12 +37,7 @@
     display: none;
 }
 
-
-
-
-
 @media ($tablet-width) {
-
     .page-header {
         width: 768px;
         margin: 0 auto;
@@ -52,7 +46,6 @@
         flex-direction: row;
         flex-wrap: wrap;
     }
-
     .page-header__logo {
         padding: 22px 0;
         display: flex;
@@ -61,7 +54,6 @@
         border-bottom: 1px solid #ececec;
         border-right: 1px solid #ececec;
     }
-
     .page-header__logo-link {
         background-image: url(../img/logo-mobile.svg);
         width: 86px;
@@ -69,11 +61,35 @@
         display: inline-block;
         margin: 0 auto;
     }
-
     .page-header__menu-toggle {
         display: none;
     }
+    .page-header__delivery-info {
+        display: block;
+        position: absolute;
+        right: 50px;
+        top: 90px;
+    }
+}
 
+@media ($dekstop-width) {
+    .page-header {
+        width: 1150px;
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .page-header__logo {
+        display: none;
+    }
+    .page-header__logo-link {
+        display: none;
+    }
+    .page-header__menu-toggle {
+        display: none;
+    }
     .page-header__delivery-info {
         display: block;
         position: absolute;
