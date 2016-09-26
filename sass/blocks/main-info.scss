@@ -1,6 +1,5 @@
 @import "../global/variables.scss";
 @import "../global/mixins.scss";
-
 .main-info {
     background-image: url("../img/hero-mobile@1x.jpg");
     background-position: top;
@@ -38,7 +37,7 @@
     @include bold;
     font-size: 19px;
     line-height: 24px;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.1px;
     padding: 27px 0;
     width: 130px;
     display: inline-block;
@@ -50,4 +49,45 @@
 
 .main-info__children-products-link {
     background-color: #56c3b2;
+}
+
+@media ($tablet-width) {
+    .main-info {
+        background-image: url("../img/hero-mobile@1x.jpg");
+        background-position: top;
+        min-height: 745px;
+        width: 768px;
+        margin: 0 auto;
+    }
+    .main-info__title {
+        font-size: 43px;
+        line-height: 50px;
+        padding: 155px 40px 255px;
+        ;
+        margin-bottom: 120px;
+        margin-top: 0;
+    }
+    .main-info__products-list {
+        margin: 0 50px;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+    }
+    .main-info__products-link {
+        list-style: none;
+        min-height: 103px;
+        padding: 0 30px;
+        width: 50%;
+    }
+}
+
+@media ($dekstop-width) {
+    .main-info {
+        width: 1150px;
+        margin-bottom: 30px;
+    }
+    .main-info__title {
+        font-size: 53px;
+        line-height: 57px;
+    }
 }

@@ -1,6 +1,5 @@
 @import "../global/variables.scss";
 @import "../global/mixins.scss";
-
 .contacts {
     @include mobile-container;
 }
@@ -37,4 +36,110 @@
 .contacts__map-wrapper {
     width: 320px;
     margin-left: -30px;
+}
+
+@media ($tablet-width) {
+    .contacts {
+        width: 768px;
+        padding: 0 50px;
+        margin: 25px auto 60px auto;
+    }
+    .contacts__title {
+        font-size: 43px;
+        line-height: 50px;
+        color: $header-text-color;
+        display: inline-block;
+        margin-bottom: 50px;
+    }
+    .contacts__title::after {
+        content: "";
+        background: url("../img/icon-flag.svg");
+        width: 47px;
+        height: 82px;
+        margin: 50px 0 0 400px;
+        display: inline-block;
+        vertical-align: text-bottom;
+    }
+    .contacts__info {
+        font-size: 17px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+    .contacts__info tr {
+        display: inline-block;
+        width: 50%;
+        vertical-align: top;
+    }
+    .contacts__method {
+        vertical-align: top;
+        padding-bottom: 30px;
+        display: inline-block;
+    }
+    .contacts__value {
+        padding-bottom: 30px;
+        display: inline-block;
+        width: 240px;
+    }
+    .contacts__value a {
+        color: $main-text-color;
+        text-decoration: none;
+        border-bottom: 1px solid #62d1ba;
+        vertical-align: top;
+    }
+    .contacts__map-wrapper {
+        width: 768px;
+        margin: 0 0 50px -50px;
+    }
+    .contacts__button {
+        width: 230px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+
+@media ($dekstop-width) {
+    .contacts {
+        width: 1150px;
+        margin: 25px auto 60px auto;
+        padding-left: 225px;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        min-height: 457px;
+    }
+    .contacts__title {
+        font-size: 53px;
+        line-height: 57px;
+        padding-top: 160px;
+        width: 100%;
+    }
+    .contacts__title::after {
+        position: absolute;
+        left: -285px;
+        top: 150px;
+    }
+    .contacts__info {
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+    }
+    .contacts__info tr {
+        display: flex;
+        flex-wrap: nowrap;
+        width: auto;
+    }
+    .contacts__map-wrapper {
+        width: 525px;
+        margin: -170px 0 50px 0;
+
+    }
+    .contacts__button {
+        margin: -110px 0 0;
+        height: 52px;
+    }
 }

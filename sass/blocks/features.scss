@@ -1,6 +1,5 @@
 @import "../global/variables.scss";
 @import "../global/mixins.scss";
-
 .features {
     width: 320px;
     padding: 0 30px;
@@ -26,11 +25,11 @@
     list-style: none;
     font-size: 17px;
     line-height: auto;
-    min-height: 125px;
+    min-height: 120px;
 }
 
 
-/* Здесь иконки преимуществ сделаны псевдоэлементами, для стилизации будут вставлены в html
+/* Здесь иконки преимуществ сделаны псевдоэлементами, для стилизации будут вставлены в html*/
 
 .features__item::before {
     display: block;
@@ -45,27 +44,27 @@
 }
 
 .features__item--price::before {
-    background-image: url(../img/icon-feature-2.svg);
-    width: 35px;
-    height: 35px;
-}
-
-.features__item--likes::before {
     background-image: url(../img/icon-feature-3.svg);
     width: 47px;
     height: 27px;
 }
 
-.features__item--handmade::before {
-    background-image: url(../img/icon-feature-4.svg);
-    width: 54px;
-    height: 24px;
-}
-
-.features__item--domestic::before {
+.features__item--likes::before {
     background-image: url(../img/icon-feature-5.svg);
     width: 33px;
     height: 28px;
+}
+
+.features__item--handmade::before {
+    background-image: url(../img/icon-feature-2.svg);
+    width: 35px;
+    height: 35px;
+}
+
+.features__item--domestic::before {
+    background-image: url(../img/icon-feature-4.svg);
+    width: 55px;
+    height: 24px;
 }
 
 .features__item--packaging::before {
@@ -74,4 +73,60 @@
     height: 32px;
 }
 
-*/
+@media ($tablet-width) {
+    .features {
+        width: 768px;
+        padding: 20px 50px 0;
+    }
+    .features__title {
+        font-size: 43px;
+        line-height: 50px;
+        margin-bottom: 40px;
+    }
+    .features__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .features__item {
+        font-size: 20px;
+        line-height: 24px;
+        min-height: 160px;
+        width: 50%;
+    }
+    .features__item--eco {
+        order: 1;
+    }
+    .features__item--handmade {
+        order: 2;
+    }
+    .features__item--price {
+        order: 3;
+    }
+    .features__item--domestic {
+        order: 4;
+    }
+    .features__item--likes {
+        order: 5;
+    }
+    .features__item--packaging {
+        order: 6;
+    }
+}
+
+
+@media ($dekstop-width) {
+    .features {
+        width: 1150px;
+        padding: 20px 225px 0;
+    }
+    .features__title {
+        font-size: 53px;
+        line-height: 57px;
+        margin-bottom: 40px;
+    }
+    .features__item {
+        padding-right: 90px;
+        box-sizing: border-box;
+    }
+}
+
