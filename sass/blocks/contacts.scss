@@ -2,12 +2,15 @@
 @import "../global/mixins.scss";
 .contacts {
     @include mobile-container;
+    margin-top: 87px;
 }
 
 .contacts__title {
     @include bold;
     font-size: 18px;
     line-height: 30px;
+    margin-left: -2px;
+    margin-bottom: 26px;
 }
 
 .contacts__info {
@@ -31,11 +34,16 @@
     text-decoration: none;
     border-bottom: 1px solid #62d1ba;
     vertical-align: top;
+    padding-bottom: 3px;
+}
+
+.contacts__value--mobile-thin {
+    padding-right: 42px;
 }
 
 .contacts__map-wrapper {
     width: 320px;
-    margin-left: -30px;
+    margin: 7px 0 31px -30px;
 }
 
 @media ($tablet-width) {

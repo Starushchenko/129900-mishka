@@ -6,6 +6,7 @@
     text-align: center;
     display: flex;
     flex-direction: column;
+    margin-top: 38px;
 }
 
 .page-footer__logo {
@@ -15,29 +16,31 @@
 .page-footer__social {
     border-bottom: 1px solid #e5e5e5;
     display: block;
-    padding: 30px 28px 30px 40px;
+    padding: 28px 22px;
+    margin-left: -6px;
+    margin-top: -3px;
+}
+
+.page-footer__social-btn {
+    vertical-align: bottom;
+    display: inline-block;
+    font-size: 0;
 }
 
 .page-footer__social-btn--inst {
-    font-size: 0;
-    display: inline-block;
     width: 22px;
     height: 22px;
     background: url(../img/icon-insta.svg);
 }
 
 .page-footer__social-btn--fb {
-    font-size: 0;
-    display: inline-block;
     width: 15px;
     height: 28px;
     background: url(../img/icon-fb.svg);
-    margin: 0 40px;
+    margin: 0 37px;
 }
 
 .page-footer__social-btn--tw {
-    font-size: 0;
-    display: inline-block;
     width: 24px;
     height: 21px;
     background: url(../img/icon-twitter.svg);
@@ -49,7 +52,7 @@
     font-size: 19px;
     line-height: 18px;
     color: $header-text-color;
-    padding: 30px;
+    padding: 28px;
 }
 
 @media ($tablet-width) {
