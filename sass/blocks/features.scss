@@ -112,11 +112,13 @@
     .features {
         width: 768px;
         padding: 20px 50px 0;
+        margin-top: -12px;
     }
     .features__title {
         font-size: 43px;
         line-height: 50px;
-        margin-bottom: 40px;
+        margin-bottom: 44px;
+        margin-left: -4px;
     }
     .features__list {
         display: flex;
@@ -125,8 +127,9 @@
     .features__item {
         font-size: 20px;
         line-height: 24px;
-        min-height: 160px;
+        min-height: 155px;
         width: 50%;
+        margin-bottom: 0;
     }
     .features__item--eco {
         order: 1;
@@ -145,6 +148,10 @@
     }
     .features__item--packaging {
         order: 6;
+    }
+
+    .features__item::before {
+        top: 6px;
     }
 }
 

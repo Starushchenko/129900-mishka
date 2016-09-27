@@ -11,8 +11,9 @@
     background-color: #f1f1f1;
     width: 320px;
     margin-left: -30px;
+    margin-bottom: 8px;
     min-height: 177px;
-    padding: 75px 36px;
+    padding: 50px 34px;
     box-sizing: border-box;
 }
 
@@ -21,22 +22,33 @@
     font-size: 27px;
     line-height: 30px;
     color: $header-text-color;
+    margin-left: 4px;
+    margin-top: 19px;
 }
 
 .page-form__description {
     font-size: 13px;
     line-height: 24px;
+    margin-left: 3px;
+    margin-bottom: 31px;
 }
 
 .page-form__require-message {
     display: inline-block;
-    width: 100%;
+    width: 270px;
+    margin-left: -3px;
     font-size: 14px;
+    line-height: 5.24px;
     text-align: center;
+    margin-bottom: 28px;
 }
 
 .page-form__require-message-tablet {
     display: none;
+}
+
+.page-form__submit {
+    margin-bottom: 15px;
 }
 
 

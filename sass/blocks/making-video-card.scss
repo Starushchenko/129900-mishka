@@ -11,14 +11,14 @@
 }
 
 .making-video-card__title-wrapper {
-    padding: 28px 0 28px 34px;
+    padding: 0px 0 7px 34px;
 }
 
 .making-video-card__title {
     @include bold;
     font-size: 17px;
     line-height: 24px;
-    margin: 25px 28px 15px;
+    margin: 23px 57px 15px;
     color: $header-text-color;
 }
 
@@ -34,10 +34,10 @@
 }
 
 .making-video-card__description {
-    padding: 0 28px 0 40px;
+    padding: 0 40px;
     font-size: 13px;
     line-height: 24px;
-    margin-bottom: 30px;
+    margin: 29px 0 24px -5px;
 }
 
 .making-video-card__order-button {

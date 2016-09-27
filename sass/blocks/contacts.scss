@@ -50,21 +50,23 @@
     .contacts {
         width: 768px;
         padding: 0 50px;
-        margin: 25px auto 60px auto;
+        margin: -40px auto 55px auto;
+        position: relative;
     }
     .contacts__title {
         font-size: 43px;
         line-height: 50px;
         color: $header-text-color;
         display: inline-block;
-        margin-bottom: 50px;
+        margin-bottom: 43px;
+        margin-left: -4px;
     }
     .contacts__title::after {
         content: "";
         background: url("../img/icon-flag.svg");
         width: 47px;
         height: 82px;
-        margin: 50px 0 0 400px;
+        margin: 60px 0 0 402px;
         display: inline-block;
         vertical-align: text-bottom;
     }
@@ -82,12 +84,19 @@
         vertical-align: top;
         padding-bottom: 30px;
         display: inline-block;
+
     }
     .contacts__value {
         padding-bottom: 30px;
         display: inline-block;
         width: 240px;
+        margin-left: -4px;
     }
+
+    .contacts__value--mobile-thin {
+        width: 200px;
+    }
+
     .contacts__value a {
         color: $main-text-color;
         text-decoration: none;
@@ -96,7 +105,7 @@
     }
     .contacts__map-wrapper {
         width: 768px;
-        margin: 0 0 50px -50px;
+        margin: 26px 0 48px -50px;
     }
     .contacts__button {
         width: 230px;

@@ -4,14 +4,18 @@
     min-width: 260px;
     text-align: left;
     border: 1px solid #ececec;
-    margin-bottom: 30px;
+    margin-bottom: 29px;
+}
+
+.product-card__image-wrapper {
+    margin-bottom: -3px;
 }
 
 .product-card__title {
     @include bold;
     font-size: 17px;
     line-height: 24px;
-    margin: 25px 28px 15px;
+    margin: 25px 28px 7px;
     color: $header-text-color;
 }
 
@@ -19,20 +23,21 @@
     font-size: 13px;
     margin: 0 28px;
     border-bottom: 1px solid #ececec;
-    padding-bottom: 25px;
+    padding-bottom: 22px;
     margin-bottom: 10px;
 }
 
 .product-card__price-wrapper {
     display: inline-block;
     margin-bottom: 20px;
+    margin-top: 11px;
 }
 
 .product-card__price {
     @include bold;
     font-size: 15px;
     line-height: 24px;
-    margin: 0 28px;
+    margin: 0 28px 8px;
 }
 
 .product-card__to-basket-btn {

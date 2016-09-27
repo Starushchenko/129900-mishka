@@ -88,12 +88,13 @@
         line-height: 50px;
         min-width: 500px;
         display: inline-block;
+        margin: 35px 0 31px -3px;
     }
     .product-of-week__title {
         text-align: center;
         display: inline-block;
         width: 100px;
-        margin: 50px 0 0 30px;
+        margin: 48px 0 0 58px;
     }
     .product-of-week__about {
         width: 50%;
@@ -102,13 +103,18 @@
         font-size: 17px;
         line-height: 30px;
         width: 85%;
-        margin-bottom: 30px;
+        margin-bottom: 34px;
     }
     .product-of-week__properties {
         width: 100%;
     }
+
+    .product-of-week__properties-parameter {
+        width: 82px;
+    }
+
     .product-of-week__photo-wrapper {
-        margin-top: 30px;
+        margin-top: 26px;
         /*------------- Убрать позже -----------*/
         width: 334px;
         height: 405px;
@@ -121,10 +127,13 @@
     .product-of-week__price {
         font-size: 20px;
         line-height: 24px;
-        margin-bottom: 30px;
+        margin-top: 7px;
+        margin-left: 2px;
+        margin-bottom: 34px;
+        width: 290px;
     }
     .product-of-week__button {
-        width: 97%;
+        width: 290px;
     }
 }
 

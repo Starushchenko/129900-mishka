@@ -14,8 +14,9 @@
     list-style: none;
     border-bottom: 1px solid #ececec;
     text-align: center;
-    padding: 28px 0;
+    padding: 26px 0 28px 83px;
     position: relative;
+    text-align: left;
 }
 
 .main-nav__item a,
@@ -25,6 +26,7 @@
     @include bold;
     font-size: 17px;
     line-height: 24px;
+    margin-left: -5px;
 }
 
 .main-nav__search a::before {
@@ -33,8 +35,8 @@
     width: 18px;
     height: 18px;
     position: absolute;
-    left: 25px;
-    top: 31px;
+    left: 35px;
+    top: 30px;
     display: inline-block;
 }
 
@@ -44,8 +46,8 @@
     width: 21px;
     height: 19px;
     position: absolute;
-    left: 25px;
-    top: 30px;
+    left: 33px;
+    top: 29px;
     display: inline-block;
 }
 
@@ -95,7 +97,9 @@
         position: relative;
     }
     .main-nav__basket {
-        min-width: 315px;
+        width: 312px;
+        padding: 32px 0 0 34px;
+        box-sizing: border-box;
     }
     .main-nav__item a,
     .main-nav__user-item a {
@@ -106,20 +110,28 @@
         line-height: 24px;
     }
     .main-nav__item a {
+        display: inline-block;
         font-size: 15px;
         line-height: 24px;
+        margin-left: 11px;
     }
+
+    .main-nav__item:nth-child(2) a {
+        margin-left: -7px;
+    }
+
     .main-nav__search a {
         font-size: 0;
     }
+
     .main-nav__search a::before {
         content: "";
         background-image: url("../img/icon-search.svg");
         width: 18px;
         height: 18px;
         position: absolute;
-        left: 32px;
-        top: 35px;
+        left: 33px;
+        top: 36px;
         display: inline-block;
     }
     .main-nav__basket a::before {
@@ -128,8 +140,8 @@
         width: 21px;
         height: 19px;
         position: absolute;
-        left: 25px;
-        top: 30px;
+        left: 30px;
+        top: 33px;
         display: inline-block;
     }
     .main-nav__dekstop-list {
