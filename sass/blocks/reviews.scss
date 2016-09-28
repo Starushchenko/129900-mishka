@@ -108,31 +108,33 @@
     }
 }
 
-
 @media ($dekstop-width) {
     .reviews {
         width: 1150px;
+        margin-top: 36px;
     }
     .reviews__title {
         font-size: 53px;
         line-height: 57px;
-        margin: 35px 0 50px 175px;
+        margin: 29px 0 50px 175px;
     }
     .reviews__item-content {
         margin-left: 175px;
         margin-bottom: 40px;
+        width: 770px;
     }
     .reviews__item-author-name {
         margin-left: 175px;
     }
     .reviews__item-author-nickname {
         margin-left: 175px;
+        margin-top: 3px;
     }
     .reviews__prev,
     .reviews__next {
-        top: 315px;
+        top: 307px;
     }
     .reviews__write-button {
-        top: 85px;
+        top: 79px;
     }
 }

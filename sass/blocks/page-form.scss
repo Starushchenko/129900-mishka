@@ -1,6 +1,5 @@
 @import "../global/variables.scss";
 @import "../global/mixins.scss";
-
 .page-form {
     @include mobile-container;
     display: flex;
@@ -51,17 +50,13 @@
     margin-bottom: 15px;
 }
 
-
-
 @media ($tablet-width) {
-
     .page-form {
         width: 768px;
         padding: 0 50px;
         display: flex;
         flex-wrap: wrap;
     }
-
     .page-form__intro {
         width: 768px;
         margin-left: -50px;
@@ -69,24 +64,20 @@
         min-height: 177px;
         padding: 76px 36px;
     }
-
     .page-form__title {
         font-size: 43px;
         line-height: 50px;
         text-align: center;
         margin-bottom: 11px;
     }
-
     .page-form__description {
         font-size: 17px;
         line-height: 30px;
         margin-bottom: 11px;
     }
-
     .page-form__require-message {
         display: none;
     }
-
     .page-form__require-message-tablet {
         display: inline-block;
         font-size: 17px;
@@ -95,14 +86,11 @@
         order: 2;
         margin-left: 110px;
         margin-top: 11px;
-
     }
-
     .page-form__submit-wrapper {
         display: flex;
         flex-direction: row;
         margin-top: -8px;
-
     }
     .page-form__submit {
         display: inline-block;
@@ -110,36 +98,32 @@
     }
 }
 
-
 @media ($dekstop-width) {
-
     .page-form {
         width: 1150px;
+        margin-bottom: 80px;
     }
-
     .page-form__intro {
         width: 1150px;
         margin-left: -50px;
         min-height: 313px;
-        padding: 60px 36px;
+        padding: 76px 52px;
     }
-
     .page-form__title {
         font-size: 53px;
         line-height: 57px;
         text-align: center;
     }
-
     .page-form__description {
-        margin: 10px 175px;
+        margin: 13px 175px;
     }
     .page-form__submit-wrapper {
         display: flex;
         flex-direction: row;
         padding: 0 175px;
-
     }
-
+    .page-form__require-message-tablet {
+        margin-top: 14px;
+        margin-left: 122px;
+    }
 }
-
-

@@ -78,11 +78,9 @@
         flex-wrap: wrap;
         margin-bottom: 55px;
     }
-
     .product-of-week__header {
         flex-direction: row;
     }
-
     .product-of-week__name {
         font-size: 43px;
         line-height: 50px;
@@ -108,11 +106,9 @@
     .product-of-week__properties {
         width: 100%;
     }
-
     .product-of-week__properties-parameter {
         width: 82px;
     }
-
     .product-of-week__photo-wrapper {
         margin-top: 26px;
         /*------------- Убрать позже -----------*/
@@ -137,17 +133,16 @@
     }
 }
 
-
 @media ($dekstop-width) {
     .product-of-week {
         width: 1150px;
         margin-bottom: 95px;
         min-height: 636px;
     }
-
     .product-of-week__header {
         position: absolute;
-        margin-top: 40px;
+        margin-top: 43px;
+        margin-left: -5px;
     }
     .product-of-week__name {
         font-size: 53px;
@@ -162,9 +157,14 @@
     }
     .product-of-week__about {
         width: 32%;
-        margin: 170px 10px 0 180px;
+        margin: 166px 10px 0 175px;
+    }
+    .product-of-week__properties {
+        margin-top: 46px;
     }
     .product-of-week__photo-wrapper {
+        margin-left: 4px;
+        margin-bottom: 20px;
         /*------------- Убрать позже -----------*/
         width: 524px;
         height: 636px;
@@ -172,6 +172,6 @@
     }
     .product-of-week__order-form {
         width: 292px;
-        margin-left: 180px;
+        margin-left: 177px;
     }
 }

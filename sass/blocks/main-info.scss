@@ -78,7 +78,6 @@
         width: 50%;
         margin-top: -2px;
     }
-
     .main-info__products-link a {
         margin-left: 6px;
         font-size: 20px;
@@ -89,10 +88,11 @@
 @media ($dekstop-width) {
     .main-info {
         width: 1150px;
-        margin-bottom: 30px;
+        margin-bottom: 35px;
     }
     .main-info__title {
         font-size: 53px;
         line-height: 57px;
+        margin-bottom: 106px;
     }
 }

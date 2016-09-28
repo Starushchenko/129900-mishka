@@ -78,14 +78,13 @@
     }
 }
 
-
 @media ($dekstop-width) {
     .page-footer {
         width: 1150px;
         padding: 0;
     }
     .page-footer__logo {
-        width: 30%;
+        width: 31.5%;
         text-align: left;
         padding: 50px;
         box-sizing: border-box;
@@ -95,7 +94,6 @@
         margin-left: 15px;
         text-align: right;
     }
-
     .page-footer__social-btn--fb {
         margin: 0 35px;
     }

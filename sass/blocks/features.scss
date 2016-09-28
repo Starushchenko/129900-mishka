@@ -29,7 +29,7 @@
     line-height: auto;
     min-height: 120px;
     width: 260px;
-    padding: 57px 0 0 ;
+    padding: 57px 0 0;
     box-sizing: border-box;
     position: relative;
     margin-bottom: 3px;
@@ -149,26 +149,25 @@
     .features__item--packaging {
         order: 6;
     }
-
     .features__item::before {
         top: 6px;
     }
 }
 
-
 @media ($dekstop-width) {
     .features {
         width: 1150px;
-        padding: 20px 225px 0;
+        padding: 8px 225px 0;
     }
     .features__title {
         font-size: 53px;
         line-height: 57px;
-        margin-bottom: 40px;
+        margin-bottom: 45px;
     }
     .features__item {
-        padding-right: 90px;
+        padding-right: 0px;
         box-sizing: border-box;
+        width: 300px;
+        margin-right: 50px;
     }
 }
-
