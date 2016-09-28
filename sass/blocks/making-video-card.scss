@@ -53,7 +53,8 @@
 @media ($tablet-width) {
 
     .making-video-card {
-        margin-top: 30px;
+        margin-top: 40px;
+        margin-bottom: 25px;
     }
 
     .making-video-card__title-wrapper {
@@ -69,13 +70,22 @@
         min-height: 455px;
     }
 
+    .making-video-card__title {
+        margin: 37px 71px 15px;
+    }
+
     .making-video-card__description {
         order: 3;
+        font-size: 15px;
+        line-height: 30px;
+        margin: 11px 0 24px;
     }
 
     .making-video-card__order-button {
-        margin: 0 42px;
+        margin: 10px 42px;
         order: 4;
+        text-align: center;
+        margin-bottom: 44px;
     }
 }
 
