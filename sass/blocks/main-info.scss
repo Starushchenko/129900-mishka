@@ -27,6 +27,28 @@
     list-style: none;
     min-height: 103px;
     padding: 0 30px;
+    position: relative;
+}
+
+.main-info__products-link:after {
+    content: "";
+    position: absolute;
+}
+
+.main-info__interior-products-link:after {
+    background: url("../img/icon-interior-green.svg");
+    width: 41px;
+    height: 63px;
+    right: 34px;
+    top: 24px;
+}
+
+.main-info__children-products-link:after {
+    background: url(../../img/icon-toy-green.svg);
+    width: 60px;
+    height: 60px;
+    right: 25px;
+    top: 21px;
 }
 
 .main-info__products-link a {
