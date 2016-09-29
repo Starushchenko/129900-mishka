@@ -1,6 +1,5 @@
 @import "../global/variables.scss";
 @import "../global/mixins.scss";
-
 .making-video-card {
     min-width: 260px;
     text-align: left;
@@ -11,14 +10,14 @@
 }
 
 .making-video-card__title-wrapper {
-    padding: 28px 0 28px 34px;
+    padding: 0px 0 7px 34px;
 }
 
 .making-video-card__title {
     @include bold;
     font-size: 17px;
     line-height: 24px;
-    margin: 25px 28px 15px;
+    margin: 23px 57px 15px;
     color: $header-text-color;
 }
 
@@ -34,10 +33,10 @@
 }
 
 .making-video-card__description {
-    padding: 0 28px 0 40px;
+    padding: 0 40px;
     font-size: 13px;
     line-height: 24px;
-    margin-bottom: 30px;
+    margin: 29px 0 24px -5px;
 }
 
 .making-video-card__order-button {
@@ -48,37 +47,37 @@
     margin-bottom: 20px;
 }
 
-
-
 @media ($tablet-width) {
-
     .making-video-card {
-        margin-top: 30px;
+        margin-top: 40px;
+        margin-bottom: 25px;
     }
-
     .making-video-card__title-wrapper {
         order: 2;
     }
-
     .making-video-card__title {
         font-size: 20px;
     }
-
     .making-video-card__video-wrapper {
         order: 1;
         min-height: 455px;
     }
-
+    .making-video-card__title {
+        margin: 37px 71px 15px;
+    }
     .making-video-card__description {
         order: 3;
+        font-size: 15px;
+        line-height: 30px;
+        margin: 11px 0 24px;
     }
-
     .making-video-card__order-button {
-        margin: 0 42px;
+        margin: 10px 42px;
         order: 4;
+        text-align: center;
+        margin-bottom: 44px;
     }
 }
-
 
 @media ($dekstop-width) {
     .making-video-card {
@@ -91,14 +90,12 @@
         flex-wrap: wrap;
         align-items: flex-end;
     }
-
     .making-video-card__title-wrapper {
         box-sizing: border-box;
-        padding: 47px 78px 0 ;
+        padding: 95px 78px 0;
         width: 367px;
         order: 1;
     }
-
     .making-video-card__title {
         @include bold;
         font-size: 20px;
@@ -106,7 +103,6 @@
         margin: 0;
         color: $header-text-color;
     }
-
     .making-video-card__video-wrapper {
         background: url("../img/icon-play.svg") no-repeat 50% 50%;
         z-index: 1;
@@ -115,28 +111,26 @@
         align-self: flex-start;
         margin-top: -382px;
     }
-
     .making-video-card__video {
         position: relative;
         display: block;
         z-index: -1;
     }
-
     .making-video-card__description {
         box-sizing: border-box;
-        padding: 47px 78px 0;
-        width: 367px;
-        font-size: 13px;
-        line-height: 24px;
-        margin-bottom: 55px;
+        padding: 47px 8px 0 89px;
+        width: 379px;
+        font-size: 15px;
+        line-height: 30px;
+        margin-bottom: 46px;
+        margin-top: -14px;
         order: 3;
     }
-
     .making-video-card__order-button {
         text-decoration: none;
         display: block;
         text-align: center;
-        margin: 0 54px 20px 0;
+        margin: 0 59px 20px 0;
         width: 190px;
         order: 3;
     }

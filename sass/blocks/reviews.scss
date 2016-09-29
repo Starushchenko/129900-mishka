@@ -2,6 +2,7 @@
 @import "../global/mixins.scss";
 .reviews {
     @include mobile-container;
+    margin-bottom: 60px;
 }
 
 .reviews__title {
@@ -9,11 +10,14 @@
     color: $header-text-color;
     font-size: 25px;
     line-height: 30px;
+    margin-left: -2px;
+    margin-bottom: 24px;
 }
 
 .reviews__item-content {
     font-size: 15px;
     line-height: 30px;
+    margin-bottom: 26px;
 }
 
 .reviews__item-author-name {
@@ -25,6 +29,8 @@
 .reviews__item-author-nickname {
     font-size: 18px;
     font-family: "Open Sans", "Arial", sans-serif;
+    margin-top: 5px;
+    margin-bottom: 33px;
 }
 
 .reviews__prev,
@@ -34,6 +40,7 @@
     display: inline-block;
     border: 1px solid #ececec;
     background-color: #ffffff;
+    margin-bottom: 39px;
 }
 
 .reviews__prev {
@@ -46,6 +53,7 @@
 
 .reviews__write-button {
     width: 100%;
+    padding: 16px 17px;
 }
 
 @media ($tablet-width) {
@@ -100,31 +108,33 @@
     }
 }
 
-
 @media ($dekstop-width) {
     .reviews {
         width: 1150px;
+        margin-top: 36px;
     }
     .reviews__title {
         font-size: 53px;
         line-height: 57px;
-        margin: 35px 0 50px 175px;
+        margin: 29px 0 50px 175px;
     }
     .reviews__item-content {
         margin-left: 175px;
         margin-bottom: 40px;
+        width: 770px;
     }
     .reviews__item-author-name {
         margin-left: 175px;
     }
     .reviews__item-author-nickname {
         margin-left: 175px;
+        margin-top: 3px;
     }
     .reviews__prev,
     .reviews__next {
-        top: 315px;
+        top: 307px;
     }
     .reviews__write-button {
-        top: 85px;
+        top: 79px;
     }
 }

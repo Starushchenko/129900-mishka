@@ -2,12 +2,15 @@
 @import "../global/mixins.scss";
 .contacts {
     @include mobile-container;
+    margin-top: 87px;
 }
 
 .contacts__title {
     @include bold;
     font-size: 18px;
     line-height: 30px;
+    margin-left: -2px;
+    margin-bottom: 26px;
 }
 
 .contacts__info {
@@ -31,32 +34,39 @@
     text-decoration: none;
     border-bottom: 1px solid #62d1ba;
     vertical-align: top;
+    padding-bottom: 3px;
+}
+
+.contacts__value--mobile-thin {
+    padding-right: 42px;
 }
 
 .contacts__map-wrapper {
     width: 320px;
-    margin-left: -30px;
+    margin: 7px 0 31px -30px;
 }
 
 @media ($tablet-width) {
     .contacts {
         width: 768px;
         padding: 0 50px;
-        margin: 25px auto 60px auto;
+        margin: -40px auto 55px auto;
+        position: relative;
     }
     .contacts__title {
         font-size: 43px;
         line-height: 50px;
         color: $header-text-color;
         display: inline-block;
-        margin-bottom: 50px;
+        margin-bottom: 43px;
+        margin-left: -4px;
     }
     .contacts__title::after {
         content: "";
         background: url("../img/icon-flag.svg");
         width: 47px;
         height: 82px;
-        margin: 50px 0 0 400px;
+        margin: 60px 0 0 402px;
         display: inline-block;
         vertical-align: text-bottom;
     }
@@ -79,6 +89,10 @@
         padding-bottom: 30px;
         display: inline-block;
         width: 240px;
+        margin-left: -4px;
+    }
+    .contacts__value--mobile-thin {
+        width: 200px;
     }
     .contacts__value a {
         color: $main-text-color;
@@ -88,7 +102,7 @@
     }
     .contacts__map-wrapper {
         width: 768px;
-        margin: 0 0 50px -50px;
+        margin: 26px 0 48px -50px;
     }
     .contacts__button {
         width: 230px;
@@ -97,14 +111,10 @@
     }
 }
 
-
-
-
-
 @media ($dekstop-width) {
     .contacts {
         width: 1150px;
-        margin: 25px auto 60px auto;
+        margin: -35px auto 48px auto;
         padding-left: 225px;
         position: relative;
         display: flex;
@@ -120,23 +130,26 @@
     }
     .contacts__title::after {
         position: absolute;
-        left: -285px;
-        top: 150px;
+        left: -287px;
+        top: 134px;
     }
     .contacts__info {
         display: flex;
         flex-direction: column;
         width: 350px;
+        margin-top: 5px;
     }
     .contacts__info tr {
         display: flex;
         flex-wrap: nowrap;
         width: auto;
     }
+    .contacts__method {
+        margin-right: 5px;
+    }
     .contacts__map-wrapper {
         width: 525px;
         margin: -170px 0 50px 0;
-
     }
     .contacts__button {
         margin: -110px 0 0;

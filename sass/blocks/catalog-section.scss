@@ -9,11 +9,12 @@
 .catalog-section__intro {
     @include bold;
     background-color: #f1f1f1;
+    letter-spacing: 1px;
     width: 320px;
     margin-left: -30px;
-    margin-bottom: 20px;
+    margin-bottom: 27px;
     min-height: 177px;
-    padding: 75px 36px;
+    padding: 50px 34px;
     box-sizing: border-box;
 }
 
@@ -35,13 +36,14 @@
         margin-left: -50px;
         margin-bottom: 20px;
         min-height: 177px;
-        padding: 70px 36px;
+        padding: 68px 36px 68px 51px;
         box-sizing: border-box;
     }
     .catalog-section__title {
         text-align: center;
         font-size: 43px;
         line-height: 50px;
+        letter-spacing: 0.1px;
     }
 }
 
@@ -54,9 +56,9 @@
     }
     .catalog-section__intro {
         width: 1150px;
-        margin-bottom: 0;
-        min-height: 350px;
-        padding: 60px 36px;
+        margin-bottom: 65px;
+        min-height: 280px;
+        padding: 60px 36px 20px 86px;
     }
     .catalog-section__title {
         text-align: center;
