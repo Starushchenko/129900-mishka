@@ -14,7 +14,7 @@
 }
 
 .page-header__logo-link {
-    background-image: url(../img/logo-mobile.svg);
+    /*background-image: url(../img/logo-mobile.svg);*/
     display: flex;
     width: 86px;
     height: 36px;
@@ -47,7 +47,7 @@
         flex-wrap: wrap;
     }
     .page-header__logo {
-        padding: 22px 0;
+        padding: 22px 0 17px;
         display: flex;
         justify-content: flex-start;
         min-width: 370px;
@@ -55,11 +55,10 @@
         border-right: 1px solid #ececec;
     }
     .page-header__logo-link {
-        background-image: url(../img/logo-mobile.svg);
-        width: 86px;
-        height: 36px;
+        width: 113px;
+        height: 47px;
         display: inline-block;
-        margin-left: 60px;
+        margin-left: 50px;
     }
     .page-header__menu-toggle {
         display: none;
@@ -82,10 +81,14 @@
         flex-wrap: wrap;
     }
     .page-header__logo {
-        display: none;
+        position: absolute;
+        left: 441px;
+        padding: 9px;
+        border: none;
     }
     .page-header__logo-link {
-        display: none;
+        width: 149px;
+        height: 73px;
     }
     .page-header__menu-toggle {
         display: none;

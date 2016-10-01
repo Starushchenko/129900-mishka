@@ -5,12 +5,19 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
     <link href="css/style.css" rel="stylesheet">
+    <script src="js/picturefill.min.js"></script>
 </head>
 
 <body>
     <header class="page-header">
         <div class="page-header__logo">
-            <a class="page-header__logo-link" href="form.html"></a>
+            <a class="page-header__logo-link" href="form.html">
+                <picture>
+                    <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+                    <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                    <img src="img/logo-mobile.svg" alt="Вязаные корзинки">
+                </picture>
+            </a>
         </div>
         <button class="page-header__menu-toggle" type="button"></button>
         <nav class="main-nav  main-nav--closed  main-nav--nojs">
@@ -72,7 +79,11 @@
             </table>
         </div>
         <div class="product-of-week__photo-wrapper">
-            <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
+            <picture>
+                <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@2x.jpg 2x, img/triple-set-desktop@1x.jpg 1x">
+                <source media="(min-width: 768px)" srcset="img/triple-set-tablet@2x.jpg 2x, img/triple-set-tablet@1x.jpg 1x">
+                <img srcset="img/triple-set-mobile@2x.jpg 2x, img/triple-set-mobile@1x.jpg 1x" alt="Вязаные корзинки">
+            </picture>
         </div>
         <div class="product-of-week__order-form">
             <p class="product-of-week__price">Цена: 990 руб.</p>
@@ -116,13 +127,17 @@
             </tr>
         </table>
         <div class="contacts__map-wrapper">
-            <img class="contacts__map" src="img/map-mobile@1x.jpg" width="320" height="457" alt="Как добраться">
+            <picture>
+                <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg">
+                <img src="img/map-mobile@1x.jpg" alt="Вязаные корзинки">
+            </picture>
         </div>
         <button class="contacts__button button" type="button">Напишите нам</button>
     </section>
 
     <footer class="page-footer">
-        <span class="page-footer__logo"><img src="#" width="105" height="40" alt="MISHKA"></span>
+        <span class="page-footer__logo"><img src="img/logo-footer.svg" width="102" height="35" alt="MISHKA"></span>
         <span class="page-footer__social">
 			<a class="page-footer__social-btn page-footer__social-btn--inst" href="#">Мы в Инстаграме</a>
 			<a class="page-footer__social-btn page-footer__social-btn--fb" href="#">Мы на Фейсбуке</a>

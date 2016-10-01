@@ -77,15 +77,19 @@
     .page-footer__logo {
         display: inline-block;
         text-align: left;
-        width: 35%;
+        width: 28%;
+        margin-top: 3px;
     }
     .page-footer__social {
-        width: 34%;
+        width: 38%;
         border: none;
+        margin-top: 2px;
     }
     .page-footer__developer {
-        width: 170px;
+        width: auto;
         border: none;
+        margin-top: 22px;
+        margin-left: 4px;
     }
 }
 
@@ -95,15 +99,23 @@
         padding: 0;
     }
     .page-footer__logo {
-        width: 31.5%;
+        width: 337px;
         text-align: left;
         padding: 50px;
         box-sizing: border-box;
+        margin-top: 0;
     }
+
+    .page-footer__social {
+        margin-right: 90px;
+    }
+
     .page-footer__developer {
         width: auto;
         margin-left: 15px;
+        margin-top: 18px;
         text-align: right;
+
     }
     .page-footer__social-btn--fb {
         margin: 0 35px;
