@@ -8,6 +8,17 @@
     position: relative;
 }
 
+.product-of-week:after {
+    content: "";
+    position: absolute;
+    background: url("../img/bg-zigzag-line.svg") no-repeat;
+    background-size: 320px 23px;
+    width: 320px;
+    height: 23px;
+    bottom: -49px;
+    left: 0;
+}
+
 .product-of-week__header {
     display: flex;
     flex-direction: row;
@@ -79,7 +90,6 @@
         flex-wrap: wrap;
         margin-bottom: 55px;
     }
-
     .product-of-week:after {
         content: "";
         position: absolute;
@@ -155,7 +165,7 @@
         background-size: 1150px 23px;
         width: 1150px;
         bottom: -74px;
-}
+    }
     .product-of-week__header {
         position: absolute;
         margin-top: 43px;

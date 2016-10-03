@@ -23,6 +23,10 @@
     padding: 0;
 }
 
+.main-info__products-links:after {
+    display: none;
+}
+
 .main-info__products-link {
     list-style: none;
     min-height: 103px;
@@ -31,6 +35,8 @@
 }
 
 .main-info__interior-products-link:after {
+    content: "";
+    position: absolute;
     background: url("../img/icon-interior-green.svg");
     width: 41px;
     height: 63px;
@@ -39,6 +45,8 @@
 }
 
 .main-info__children-products-link:after {
+    content: "";
+    position: absolute;
     background: url(../img/icon-toy-green.svg);
     width: 60px;
     height: 60px;
@@ -75,11 +83,10 @@
         width: 768px;
         margin: 0 auto;
     }
-
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx){
+    @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
         background-image: url("../img/hero-desktop@2x.jpg");
     }
-
     .main-info__title {
         font-size: 43px;
         line-height: 50px;
@@ -93,17 +100,19 @@
         display: flex;
         flex-direction: row;
     }
-
+    .main-info__products-links {
+        position: relative;
+    }
     .main-info__products-links:after {
+        display: block;
         content: "";
         position: absolute;
-        bottom: 70px;
+        bottom: -15px;
         background: url("../img/bg-zigzag-fill.svg") no-repeat;
         background-size: 768px 34px;
         width: 768px;
         height: 34px;
     }
-
     .main-info__products-link {
         list-style: none;
         min-height: 120px;
@@ -116,12 +125,10 @@
         font-size: 20px;
         line-height: 30px;
     }
-
     .main-info__interior-products-link:after {
         top: 30px;
         right: 37px;
     }
-
     .main-info__children-products-link:after {
         top: 31px;
         right: 34px;

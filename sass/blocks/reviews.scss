@@ -65,10 +65,10 @@
         background: url("../img/review@1x.jpg") no-repeat;
         margin-top: 20px;
     }
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
         background: url("../img/review@2x.jpg") no-repeat;
     }
-
     .reviews__title {
         font-size: 43px;
         line-height: 50px;
