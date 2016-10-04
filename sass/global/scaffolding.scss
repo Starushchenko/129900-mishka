@@ -12,7 +12,7 @@ body {
 .button {
     font-size: 18px;
     line-height: 16px;
-    font-family: "Open Sans Bold", sans-serif;
+    font-family: "Open Sans Bold", "Arial", sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     border: 2px solid #444444;
@@ -20,9 +20,34 @@ body {
     padding: 17px;
     width: 100%;
     color: $header-text-color;
+    &:hover {
+        background: #444444;
+        color: #ffffff;
+    }
+    &:active {
+        color: #797979;
+    }
 }
 
 img {
     max-width: 100%;
     height: auto;
+}
+
+::-webkit-input-placeholder {
+    font-family: "Open Sans", "Arial", sans-serif;
+    color: #c7c7c7;
+}
+
+::-moz-placeholder {
+    font-family: "Open Sans", "Arial", sans-serif;
+    color: #c7c7c7;
+}
+:-moz-placeholder {
+    font-family: "Open Sans", "Arial", sans-serif;
+    color: #c7c7c7;
+}
+:-ms-input-placeholder {
+    font-family: "Open Sans", "Arial", sans-serif;
+    color: #c7c7c7;
 }

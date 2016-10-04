@@ -68,7 +68,12 @@
     left: -60px;
     top: -10px;
 }
-
+.form-block__radio-label:hover::before {
+    border: 2px solid #62d1ba;
+}
+.form-block__radio-label:active::before {
+    border: 2px solid #c7c7c7;
+}
 .form-block__product-type-input:checked ~ .form-block__radio-label::before {
     content: "";
     width: 35px;
@@ -86,6 +91,12 @@
     background: radial-gradient(ellipse at center, #62d1ba 27%, #62d1ba 27%, #ffffff 27%, #ffffff 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: gradient( startColorstr='#62d1ba', endColorstr='#ffffff', GradientType=1);
+}
+.form-block__product-type-input:checked ~ .form-block__radio-label:hover::before {
+    border: 2px solid #62d1ba;
+}
+.form-block__product-type-input:checked ~ .form-block__radio-label:active::before {
+    border: 2px solid #c7c7c7;
 }
 
 .form-block__checkbox-list {
@@ -120,7 +131,12 @@
     vertical-align: middle;
     margin: -2px 20px 2px 1px;
 }
-
+.form-block__checkbox-label:hover::before {
+    border: 2px solid #62d1ba;
+}
+.form-block__checkbox-label:active::before {
+    border: 2px solid #c7c7c7;
+}
 .form-block__checkbox-input:checked ~ .form-block__checkbox-label::before {
     content: "";
     width: 35px;
@@ -131,6 +147,12 @@
     margin-right: 20px;
     background: url("../img/icon-tick.svg") no-repeat 50% 50%;
     background-size: 70%;
+}
+.form-block__checkbox-input:checked ~ .form-block__checkbox-label:hover::before {
+    border: 2px solid #62d1ba;
+}
+.form-block__checkbox-input:checked ~ .form-block__checkbox-label:active::before {
+    border: 2px solid #c7c7c7;
 }
 
 .form-block__name-list {
@@ -165,6 +187,15 @@
     width: 100%;
     display: inline-block;
     padding: 12px 0;
+    &:hover {
+        border-bottom: 2px solid #62d1ba;
+    }
+    &:focus {
+        border-bottom: 2px solid #62d1ba;
+    }
+    &:invalid {
+        border-bottom: 2px solid #f0b1b1;
+    }
 }
 
 .form-block__communicate-info {
@@ -192,6 +223,42 @@
     min-height: 53px;
     padding-top: 11px;
     display: inline-block;
+    &:hover {
+        border-bottom: 2px solid #62d1ba;
+    }
+    &:focus {
+        border-bottom: 2px solid #62d1ba;
+    }
+    &:invalid {
+        border-bottom: 2px solid #f0b1b1;
+    }
+}
+
+.form-block__half-block-tel:after {
+    content: "";
+    position: absolute;
+    background: url("../img/icon-phone-gray.svg");
+    width: 25px;
+    height: 24px;
+    display: block;
+    top: 25px;
+    right: 3px;
+}
+.form-block__half-block-tel:hover:after {
+    background: url("../img/icon-phone-green.svg");
+}
+.form-block__half-block-email:after {
+    content: "";
+    position: absolute;
+    background: url("../img/icon-mail-gray.svg");
+    width: 32px;
+    height: 32px;
+    display: block;
+    top: 26px;
+    right: 0;
+}
+.form-block__half-block-email:hover:after {
+    background: url("../img/icon-mail-green.svg");
 }
 
 .form-block__email-input {
@@ -205,6 +272,15 @@
     padding-top: 11px;
     display: inline-block;
     margin-bottom: 36px;
+    &:hover {
+        border-bottom: 2px solid #62d1ba;
+    }
+    &:focus {
+        border-bottom: 2px solid #62d1ba;
+    }
+    &:invalid {
+        border-bottom: 2px solid #f0b1b1;
+    }
 }
 
 .form-block__wishes-input {
@@ -215,7 +291,15 @@
     box-sizing: border-box;
     min-height: 142px;
     padding: 15px;
-    margin-bottom: -4px;
+    margin-bottom: -4px;&:hover {
+        border: 2px solid #62d1ba;
+    }
+    &:focus {
+        border: 2px solid #62d1ba;
+    }
+    &:invalid {
+        border-bottom: 2px solid #f0b1b1;
+    }
 }
 
 @media ($tablet-width) {
@@ -343,19 +427,35 @@
     .form-block__communicate-info {
         padding-top: 38px;
         margin-top: -22px;
+        margin-bottom: 18px;
+    }
+    .form-block__half-block-tel {
+        border-top: 1px solid #63d1bb;
+        position: relative;
+        margin-bottom: 46px;
     }
     .form-block__half-block-tel,
     .form-block__half-block-email {
+        display: flex;
         border: none;
-        margin-bottom: 0;
+        margin-bottom: 8px;
+        position: relative;
         & .form-block__title {
             background: #f1f1f1;
             display: inline-block;
-            margin-top: 10px;
-            margin-bottom: 40px;
+            vertical-align: middle;
+            margin-top: 32px;
+            margin-right: -9px;
         }
     }
+    .form-block__half-block-email:after {
+        right: 70px;
+    }
+    .form-block__half-block-tel:after {
+        right: 75px;
+    }
     .form-block__tel-input {
+        min-height: 0;
         border: none;
         border-bottom: 2px solid #000000;
         font-size: 17px;
@@ -365,6 +465,8 @@
         display: inline-block;
     }
     .form-block__email-input {
+        min-height: 0px;
+        margin-bottom: 0px;
         border: none;
         border-bottom: 2px solid #000000;
         font-size: 17px;
@@ -378,7 +480,7 @@
         font-size: 17px;
         line-height: 18px;
         padding: 15px;
-        margin: -15px 50px 0 -12px;
+        margin: -15px 50px 0 -10px;
     }
     .page-form__submit-wrapper {
         margin-bottom: -5px;
@@ -478,22 +580,48 @@
         border: none;
         border-bottom: 2px solid #000000;
     }
+    .form-block__communicate-info {
+        padding-top: 40px;
+        margin-bottom: 23px;
+    }
+    .form-block__half-block-tel,
+    .form-block__half-block-email {
+        display: flex;
+        border: none;
+        & .form-block__title {
+            background: #f1f1f1;
+            display: inline-block;
+            vertical-align: middle;
+            margin-top: 30px;
+            margin-right: -18px;
+        }
+    }
+    .form-block__half-block-email:after {
+        right: 222px;
+    }
+    .form-block__half-block-tel:after {
+        right: 227px;
+    }
     .form-block__tel-input {
+        min-height: 0;
+        display: inline-block;
         border: none;
         border-bottom: 2px solid #000000;
         font-size: 17px;
         line-height: 18px;
         width: 700px;
-        margin-bottom: 20px;
+        margin-bottom: 0;
         background: #f1f1f1;
     }
     .form-block__email-input {
+        min-height: 0;
+        margin-bottom: 0;
+        display: inline-block;
         border: none;
         border-bottom: 2px solid #000000;
         font-size: 17px;
         line-height: 18px;
         width: 700px;
-        margin-bottom: -40px;
         background: #f1f1f1;
     }
     .form-block__wishes {

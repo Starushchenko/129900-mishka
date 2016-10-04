@@ -45,10 +45,28 @@
 
 .reviews__prev {
     background: url(../img/icon-left-arrow.svg) no-repeat #ffffff 50% 50%;
+    font-size: 0;
+    &:hover {
+        background: url(../img/icon-left-arrow-hover.svg) no-repeat #ffffff 50% 50%;
+        background-size: 50px 26px;
+    }
+    &:active {
+        background: url(../img/icon-left-arrow-active.svg) no-repeat #ffffff 50% 50%;
+        background-size: 50px 26px;
+    }
 }
 
 .reviews__next {
     background: url(../img/icon-right-arrow.svg) no-repeat #ffffff 50% 50%;
+    font-size: 0;
+    &:hover {
+        background: url(../img/icon-right-arrow-hover.svg) no-repeat #ffffff 50% 50%;
+        background-size: 50px 26px;
+    }
+    &:active {
+        background: url(../img/icon-right-arrow-active.svg) no-repeat #ffffff 50% 50%;
+        background-size: 50px 26px;
+    }
 }
 
 .reviews__write-button {

@@ -7,6 +7,12 @@
     margin-bottom: 30px;
     display: flex;
     flex-direction: column;
+    &:hover {
+        box-shadow: 0 2px 35px -5px rgba(0,0,0, 0.5);
+    }
+    &:active {
+        box-shadow: 0 1px 17px -5px rgba(0,0,0, 0.5);
+    }
 }
 
 .making-video-card__title-wrapper {
@@ -39,7 +45,7 @@
 .making-video-card__video-wrapper:after {
     content: "";
     position: absolute;
-    background: url("../img/icon-play.svg");
+    background: url("../../img/icon-play.svg") no-repeat;
     width: 101px;
     height: 77px;
     left: 80px;
@@ -173,5 +179,22 @@
         order: 3;
         font-size: 17px;
         line-height: 16px;
+    }
+    .making-video-card__video-wrapper:hover::after {
+        width: 121px;
+        height: 92px;
+        background-size: 121px 92px;
+        top: 185px;
+        left: 290px;
+
+    }
+    .making-video-card__video-wrapper:active::after {
+        width: 81px;
+        height: 62px;
+        background-size: 81px 62px;
+        top: 195px;
+        left: 310px;
+        opacity: 0.5;
+
     }
 }
