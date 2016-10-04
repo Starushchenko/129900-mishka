@@ -34,10 +34,21 @@
         background-color: #f1f1f1;
         width: 768px;
         margin-left: -50px;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
         min-height: 177px;
-        padding: 68px 36px 68px 51px;
+        padding: 68px 36px 48px 51px;
         box-sizing: border-box;
+        position: relative;
+    }
+    .catalog-section__intro:after {
+        content: "";
+        position: absolute;
+        background: url("../img/bg-zigzag-fill.svg") no-repeat;
+        background-size: 768px 34px;
+        width: 768px;
+        height: 34px;
+        left: 0;
+        top: 209px;
     }
     .catalog-section__title {
         text-align: center;
@@ -56,9 +67,14 @@
     }
     .catalog-section__intro {
         width: 1150px;
-        margin-bottom: 65px;
-        min-height: 280px;
+        margin-bottom: 85px;
+        min-height: 260px;
         padding: 60px 36px 20px 86px;
+    }
+    .catalog-section__intro:after {
+        background-size: 1150px 34px;
+        width: 1150px;
+        top: 239px;
     }
     .catalog-section__title {
         text-align: center;

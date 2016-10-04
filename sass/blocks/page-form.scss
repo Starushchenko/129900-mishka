@@ -63,6 +63,17 @@
         margin-bottom: 50px;
         min-height: 177px;
         padding: 76px 36px;
+        position: relative;
+    }
+    .page-form__intro:after {
+        content: "";
+        position: absolute;
+        background: url("../img/bg-zigzag-fill.svg") no-repeat;
+        background-size: 768px 34px;
+        width: 768px;
+        height: 34px;
+        left: 0;
+        top: 210px;
     }
     .page-form__title {
         font-size: 43px;
@@ -106,8 +117,13 @@
     .page-form__intro {
         width: 1150px;
         margin-left: -50px;
-        min-height: 313px;
+        min-height: 260px;
         padding: 76px 52px;
+    }
+    .page-form__intro:after {
+        background-size: 1150px 34px;
+        width: 1150px;
+        top: 239px;
     }
     .page-form__title {
         font-size: 53px;
@@ -115,15 +131,20 @@
         text-align: center;
     }
     .page-form__description {
-        margin: 13px 175px;
+        margin: 66px 175px 12px;
     }
     .page-form__submit-wrapper {
         display: flex;
         flex-direction: row;
         padding: 0 175px;
     }
+    .page-form__submit {
+        font-size: 17px;
+        line-height: 16px;
+    }
     .page-form__require-message-tablet {
         margin-top: 14px;
         margin-left: 122px;
+        margin-bottom: 37px;
     }
 }

@@ -5,12 +5,19 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
     <link href="css/style.css" rel="stylesheet">
+    <script src="js/picturefill.min.js"></script>
 </head>
 
 <body>
     <header class="page-header">
         <div class="page-header__logo">
-            <a class="page-header__logo-link" href=""></a>
+            <a class="page-header__logo-link" href="form.html">
+                <picture>
+                    <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+                    <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                    <img src="img/logo-mobile.svg" alt="Mishka">
+                </picture>
+            </a>
         </div>
         <button class="page-header__menu-toggle" type="button"></button>
         <nav class="main-nav  main-nav--closed  main-nav--nojs">
@@ -24,7 +31,7 @@
                         <a href="" class="main-nav__search-button">Поиск по сайту</a>
                     </li>
                     <li class="main-nav__user-item  main-nav__basket basket">
-                        <a href="catalog.html" class="main-nav__basket-link">Корзина: <span class="main-nav__basket-condition">пока пуста</span></a>
+                        <a href="#" class="main-nav__basket-link">Корзина: <span class="main-nav__basket-condition">пока пуста</span></a>
                     </li>
                 </ul>
                 <ul class="main-nav__dekstop-list">
@@ -46,7 +53,11 @@
         </div>
         <div class="product-card">
             <div class="product-card__image-wrapper">
-                <img src="img/photo-1-mobile@1x.jpg" width="260" height="195" alt="">
+                <picture>
+                    <source media="(min-width: 1150px)" srcset="img/photo-1-desktop@2x.jpg 2x, img/photo-1-desktop@1x.jpg 1x" >
+                    <source media="(min-width: 768px)" srcset="img/photo-1-tablet@2x.jpg 2x, img/photo-1-tablet@1x.jpg 1x" >
+                    <img srcset="img/photo-1-mobile@2x.jpg 2x, img/photo-1-mobile@2x.jpg 1x" alt="Зайчик-попрыгайчик">
+                </picture>
             </div>
             <div class="product-card__info-wrapper">
                 <h2 class="product-card__title">Зайчик-попрыгайчик</h2>
@@ -54,12 +65,16 @@
                 <div class="product-card__price-wrapper">
                     <p class="product-card__price">1 200 руб.</p>
                 </div>
-                <a href="" class="product-card__to-basket-btn" type="button"><img src="img/icon-cart.svg" class="product-card__to-basket-btn-img" width="21" height="19" alt="В корзину"></a>
+                <a href="" class="product-card__to-basket-btn" type="button"><img src="img/icon-cart-gray.svg" class="product-card__to-basket-btn-img" width="21" height="19" alt="В корзину"></a>
             </div>
         </div>
         <div class="product-card">
             <div class="product-card__image-wrapper">
-                <img src="img/photo-2-mobile@1x.jpg" width="260" height="195" alt="">
+                <picture>
+                    <source media="(min-width: 1150px)" srcset="img/photo-2-desktop@2x.jpg 2x, img/photo-2-desktop@1x.jpg 1x" >
+                    <source media="(min-width: 768px)" srcset="img/photo-2-tablet@2x.jpg 2x, img/photo-2-tablet@1x.jpg 1x" >
+                    <img srcset="img/photo-2-mobile@2x.jpg 2x, img/photo-2-mobile@2x.jpg 1x" alt="Корзинка для белья">
+                </picture>
             </div>
             <div class="product-card__info-wrapper">
                 <h2 class="product-card__title">Корзинка для белья</h2>
@@ -67,12 +82,16 @@
                 <div class="product-card__price-wrapper">
                     <p class="product-card__price">690 руб.</p>
                 </div>
-                <a href="" class="product-card__to-basket-btn" type="button"><img src="img/icon-cart.svg" class="product-card__to-basket-btn-img" width="21" height="19" alt="В корзину"></a>
+                <a href="" class="product-card__to-basket-btn" type="button"><img src="img/icon-cart-gray.svg" class="product-card__to-basket-btn-img" width="21" height="19" alt="В корзину"></a>
             </div>
         </div>
         <div class="product-card product-card__big-title">
             <div class="product-card__image-wrapper">
-                <img src="img/photo-3-mobile@1x.jpg" width="260" height="195" alt="">
+                <picture>
+                    <source media="(min-width: 1150px)" srcset="img/photo-3-desktop@2x.jpg 2x, img/photo-3-desktop@1x.jpg 1x" >
+                    <source media="(min-width: 768px)" srcset="img/photo-3-tablet@2x.jpg 2x, img/photo-3-tablet@1x.jpg 1x" >
+                    <img srcset="img/photo-3-mobile@2x.jpg 2x, img/photo-3-mobile@2x.jpg 1x" alt="Большая корзина игрушек">
+                </picture>
             </div>
             <div class="product-card__info-wrapper">
                 <h2 class="product-card__title">Большая корзинка для игрушек</h2>
@@ -80,7 +99,7 @@
                 <div class="product-card__price-wrapper">
                     <p class="product-card__price">1 500 руб.</p>
                 </div>
-                <a href="" class="product-card__to-basket-btn" type="button"><img src="img/icon-cart.svg" class="product-card__to-basket-btn-img" width="21" height="19" alt="В корзину"></a>
+                <a href="" class="product-card__to-basket-btn" type="button"><img src="img/icon-cart-gray.svg" class="product-card__to-basket-btn-img" width="21" height="19" alt="В корзину"></a>
             </div>
         </div>
         <div class="making-video-card">
@@ -88,7 +107,11 @@
                 <h2 class="making-video-card__title">Процесс производства</h2>
             </div>
             <div class="making-video-card__video-wrapper">
-                <img src="img/video-mobile@1x.jpg" class="making-video-card__video" width="260" height="150" alt="">
+                <picture>
+                    <source media="(min-width: 1150px)" srcset="img/video-desktop@2x.jpg 2x, img/video-desktop@1x.jpg 1x">
+                    <source media="(min-width: 768px)" srcset="img/video-tablet@2x.jpg 2x, img/video-tablet@1x.jpg 1x">
+                    <img srcset="img/video-mobile@2x.jpg 2x, img/video-mobile@1x.jpg 1x" alt="Процесс производства">
+                </picture>
             </div>
             <p class="making-video-card__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
             <a href="" class="making-video-card__order-button  button" type="button">Сделать заказ</a>
@@ -96,7 +119,7 @@
     </section>
 
     <footer class="page-footer">
-        <span class="page-footer__logo"><img src="#" width="105" height="40" alt="MISHKA"></span>
+        <span class="page-footer__logo"><img src="img/logo-footer.svg" width="102" height="35" alt="MISHKA"></span>
         <span class="page-footer__social">
 			<a class="page-footer__social-btn page-footer__social-btn--inst" href="#">Мы в Инстаграме</a>
 			<a class="page-footer__social-btn page-footer__social-btn--fb" href="#">Мы на Фейсбуке</a>

@@ -50,9 +50,6 @@
     }
 }
 
-
-/* Здесь иконки преимуществ сделаны псевдоэлементами, для стилизации будут вставлены в html*/
-
 .features__item::before {
     display: block;
     content: "";
@@ -62,7 +59,7 @@
 }
 
 .features__item--eco::before {
-    background-image: url(../img/icon-feature-1.svg);
+    background-image: url(../img/icon-feature-1-green.svg);
     width: 32px;
     height: 38px;
     left: 9px;
@@ -70,14 +67,14 @@
 }
 
 .features__item--price::before {
-    background-image: url(../img/icon-feature-3.svg);
+    background-image: url(../img/icon-feature-3-green.svg);
     width: 47px;
     height: 27px;
     top: 3px;
 }
 
 .features__item--likes::before {
-    background-image: url(../img/icon-feature-5.svg);
+    background-image: url(../img/icon-feature-5-green.svg);
     width: 33px;
     height: 28px;
     left: 7px;
@@ -85,7 +82,7 @@
 }
 
 .features__item--handmade::before {
-    background-image: url(../img/icon-feature-2.svg);
+    background-image: url(../img/icon-feature-2-green.svg);
     width: 35px;
     height: 35px;
     left: 3px;
@@ -93,7 +90,7 @@
 }
 
 .features__item--domestic::before {
-    background-image: url(../img/icon-feature-4.svg);
+    background-image: url(../img/icon-feature-4-green.svg);
     width: 55px;
     height: 24px;
     left: -5px;
@@ -101,7 +98,7 @@
 }
 
 .features__item--packaging::before {
-    background-image: url(../img/icon-feature-6.svg);
+    background-image: url(../img/icon-feature-6-green.svg);
     width: 33px;
     height: 32px;
     left: 3px;
@@ -130,6 +127,15 @@
         min-height: 155px;
         width: 50%;
         margin-bottom: 0;
+        &:first-child {
+            padding-right: 110px;
+        }
+        &:nth-child(2) {
+            padding-right: 70px;
+        }
+        &:nth-child(3) {
+            padding-right: 100px;
+        }
     }
     .features__item--eco {
         order: 1;
@@ -169,5 +175,14 @@
         box-sizing: border-box;
         width: 300px;
         margin-right: 50px;
+        &:first-child {
+            padding-right: 70px;
+        }
+        &:nth-child(2) {
+            padding-right: 40px;
+        }
+        &:nth-child(3) {
+            padding-right: 80px;
+        }
     }
 }

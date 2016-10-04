@@ -31,7 +31,7 @@
 
 .main-nav__search a::before {
     content: "";
-    background-image: url("../../img/icon-search.svg");
+    background-image: url("../../img/icon-search-gray.svg");
     width: 18px;
     height: 18px;
     position: absolute;
@@ -42,7 +42,7 @@
 
 .main-nav__basket a::before {
     content: "";
-    background-image: url("../../img/icon-cart.svg");
+    background-image: url("../../img/icon-cart-gray.svg");
     width: 21px;
     height: 19px;
     position: absolute;
@@ -123,7 +123,7 @@
     }
     .main-nav__search a::before {
         content: "";
-        background-image: url("../img/icon-search.svg");
+        background-image: url("../img/icon-search-gray.svg");
         width: 18px;
         height: 18px;
         position: absolute;
@@ -133,7 +133,7 @@
     }
     .main-nav__basket a::before {
         content: "";
-        background-image: url("../img/icon-cart.svg");
+        background-image: url("../img/icon-cart-gray.svg");
         width: 21px;
         height: 19px;
         position: absolute;

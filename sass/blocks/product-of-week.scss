@@ -5,6 +5,18 @@
     @include mobile-container;
     padding-top: 4px;
     margin-bottom: 50px;
+    position: relative;
+}
+
+.product-of-week:after {
+    content: "";
+    position: absolute;
+    background: url("../img/bg-zigzag-line.svg") no-repeat;
+    background-size: 320px 23px;
+    width: 320px;
+    height: 23px;
+    bottom: -49px;
+    left: 0;
 }
 
 .product-of-week__header {
@@ -78,6 +90,16 @@
         flex-wrap: wrap;
         margin-bottom: 55px;
     }
+    .product-of-week:after {
+        content: "";
+        position: absolute;
+        background: url("../img/bg-zigzag-line.svg") no-repeat;
+        background-size: 768px 23px;
+        width: 768px;
+        height: 23px;
+        bottom: -52px;
+        left: 0;
+    }
     .product-of-week__header {
         flex-direction: row;
     }
@@ -138,6 +160,11 @@
         width: 1150px;
         margin-bottom: 95px;
         min-height: 636px;
+    }
+    .product-of-week:after {
+        background-size: 1150px 23px;
+        width: 1150px;
+        bottom: -74px;
     }
     .product-of-week__header {
         position: absolute;
