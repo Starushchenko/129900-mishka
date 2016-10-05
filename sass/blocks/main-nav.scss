@@ -31,7 +31,7 @@
 
 .main-nav__search a::before {
     content: "";
-    background-image: url("../../img/icon-search-gray.svg");
+    background-image: url("../img/icon-search-gray.svg");
     width: 18px;
     height: 18px;
     position: absolute;
@@ -40,9 +40,16 @@
     display: inline-block;
 }
 
+.main-nav__search a:hover::before {
+    background-image: url("../img/icon-search-green.svg");
+}
+.main-nav__search a:active::before {
+    opacity: 0.3;
+}
+
 .main-nav__basket a::before {
     content: "";
-    background-image: url("../../img/icon-cart-gray.svg");
+    background-image: url("../img/icon-cart-gray.svg");
     width: 21px;
     height: 19px;
     position: absolute;
@@ -51,9 +58,28 @@
     display: inline-block;
 }
 
+.main-nav__basket a:hover::before {
+    background-image: url("../img/icon-cart-green.svg");
+}
+.main-nav__basket a:active::before {
+    opacity: 0.3;
+}
+
 .main-nav__dekstop-list {
     display: none;
 }
+
+.main-nav__item a,
+.main-nav__user-item a,
+.main-nav__dekstop-item a {
+    &:hover {
+        color: #666666;
+    }
+    &:active {
+        color: #b2b2b2;
+    }
+}
+
 
 @media ($tablet-width) {
     .main-nav__list,

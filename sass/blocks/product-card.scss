@@ -5,6 +5,12 @@
     text-align: left;
     border: 1px solid #ececec;
     margin-bottom: 29px;
+    &:hover {
+        box-shadow: 0 2px 35px -5px rgba(0,0,0, 0.5);
+    }
+    &:active {
+        box-shadow: 0 1px 17px -5px rgba(0,0,0, 0.5);
+    }
 }
 
 .product-card__image-wrapper {
@@ -21,6 +27,12 @@
     line-height: 24px;
     margin: 25px 28px 7px;
     color: $header-text-color;
+    &:hover {
+        color: #666666;
+    }
+    &:active {
+        color: #b7b7b7;
+    }
 }
 
 .product-card__properties {
@@ -42,6 +54,12 @@
     font-size: 15px;
     line-height: 24px;
     margin: 0 28px 8px;
+    &:hover {
+        color: #666666;
+    }
+    &:active {
+        color: #b7b7b7;
+    }
 }
 
 .product-card__to-basket-btn {
@@ -49,6 +67,18 @@
     position: absolute;
     right: 28px;
     bottom: 25px;
+    width: 21px;
+    height: 19px;
+    z-index: 3;
+}
+.product-card__to-basket-btn svg {
+    fill: #d3d2d2;
+}
+.product-card__to-basket-btn:hover svg {
+    fill: #63d1bb;
+}
+.product-card__to-basket-btn:active svg {
+    fill: #d0f1ea;
 }
 
 @media ($tablet-width) {
@@ -56,9 +86,7 @@
         width: 100%;
         margin: 41px 0 11px;
         display: flex;
-        //!!!!!!!! ЧТО ДВИГАЕТ БЛОК ВНИЗ НА 3px ? ВЫЯСНИТЬ И УБРАТЬ max-height//
         max-height: 334px;
-        //-----------------------------//
     }
     .product-card__image-wrapper {
         width: 50%;
