@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Форма заказа</title>
     <link href="css/style.css" rel="stylesheet">
+    <script src="js/javascript.js"></script>
     <script src="js/picturefill.min.js"></script>
 </head>
 
@@ -13,11 +14,13 @@
     <header class="page-header">
         <div class="page-header__logo">
             <a class="page-header__logo-link" href="index.html">
-                <picture>
-                    <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-                    <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-                    <img src="img/logo-mobile.svg" alt="Mishka">
-                </picture>
+                <span>
+                    <picture>
+                        <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+                        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                        <img src="img/logo-mobile.svg" alt="Mishka">
+                    </picture>
+                </span>
             </a>
         </div>
         <button class="page-header__menu-toggle" type="button"></button>
@@ -179,6 +182,36 @@
             </a>
         </span>
     </footer>
+    <div class="modal-overlay"></div>
+    <!-- Добавление класса "modal-overlay--show" отобразит фон попапа-->
+    <div class="to-basket-modal">
+    <!-- Добавление класса "to-basket-modal--show" отобразит попап-->
+        <h2 class="to-basket-modal__title">Добавить в корзину</h2>
+        <form class="to-basket-modal__size-selection-form" action="#" method="get">
+            <p class="to-basket-modal__size-selection-form-legend">Выберите размер:</p>
+            <ul class="to-basket-modal__form-sizes-list">
+                <li class="to-basket-modal__form-size-wrapper">
+                    <input type="radio" class="to-basket-modal__form-size-input" id="to-basket-modal__form-size-input1" name="size" checked>
+                    <label class="to-basket-modal__form-size-item" for="to-basket-modal__form-size-input1">
+                        S
+                    </label>
+                </li>
+                <li class="to-basket-modal__form-size-wrapper">
+                    <input type="radio" class="to-basket-modal__form-size-input" id="to-basket-modal__form-size-input2" name="size">
+                    <label class="to-basket-modal__form-size-item" for="to-basket-modal__form-size-input2">
+                        M
+                    </label>
+                </li>
+                <li class="to-basket-modal__form-size-wrapper">
+                    <input type="radio" class="to-basket-modal__form-size-input" id="to-basket-modal__form-size-input3" name="size">
+                    <label class="to-basket-modal__form-size-item" for="to-basket-modal__form-size-input3">
+                        L
+                    </label>
+                </li>
+            </ul>
+            <input type="submit" class="to-basket-modal__form-submit-btn button button--mint" value="Добавить">
+        </form>
+    </div>
 </body>
 
 </html>

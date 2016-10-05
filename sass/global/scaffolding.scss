@@ -7,6 +7,16 @@ body {
     line-height: 24px;
     color: $main-text-color;
     background-color: $main-bg-color;
+    position: relative;
+    margin: 0 auto;
+    width: 320px;
+    @media ($tablet-width) {
+        width: 768px;
+    }
+    @media ($dekstop-width) {
+        width: 1150px;
+    }
+
 }
 
 .button {

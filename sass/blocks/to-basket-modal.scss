@@ -3,7 +3,17 @@
 .to-basket-modal {
     @include mobile-container;
     border-top: 1px solid #c7c7c7;
+    background: #ffffff;
     text-align: center;
+    position: absolute;
+    top: 1400px;
+    box-shadow: 0 5px 25px -2px rgba(0,0,0, 0.4);
+    z-index: 3;
+    display: none;
+}
+
+.to-basket-modal--show {
+    display: block;
 }
 
 .to-basket-modal__title {
@@ -12,11 +22,15 @@
     line-height: 30px;
     text-transform: uppercase;
     color: $header-text-color;
+    padding: 0 50px;
+    margin-top: 29px;
 }
 
 .to-basket-modal__size-selection-form-legend {
     font-size: 15px;
     line-height: 30px;
+    margin-top: -10px;
+    margin-bottom: 40px;
 }
 
 .to-basket-modal__form-sizes-list {
@@ -48,7 +62,7 @@
 
 .to-basket-modal__form-size-item::before {
     content: "";
-    width: 82px;
+    width: 80px;
     height: 52px;
     border: 2px solid #ececec;
     position: absolute;
@@ -61,7 +75,7 @@
 
 .to-basket-modal__form-size-input:checked ~ .to-basket-modal__form-size-item::before {
     content: "";
-    width: 82px;
+    width: 80px;
     height: 52px;
     border: 2px solid #63d1bb;
     position: absolute;
@@ -73,6 +87,8 @@
     background-color: #63d1bb;
     color: #ffffff;
     border: none;
+    margin-bottom: 46px;
+    margin-top: 13px;
 }
 
 @media ($tablet-width) {
@@ -80,18 +96,24 @@
         width: 568px;
         min-height: 336px;
         border: 1px solid #c7c7c7;
+        top: 1530px;
+        margin-left: 101px;
     }
     .to-basket-modal__title {
         font-size: 30px;
         line-height: 57px;
+        margin-top: 35px;
     }
     .to-basket-modal__size-selection-form-legend {
         font-size: 17px;
         line-height: 30px;
+        margin-top: -12px;
+        margin-bottom: 10px;
     }
     .to-basket-modal__form-size-wrapper {
         width: 104px;
-        margin: 30px 7px 50px;
+        margin: 30px 7px 29px;
+
     }
     .to-basket-modal__form-size-item::before {
         width: 104px;
@@ -101,5 +123,12 @@
     }
     .to-basket-modal__form-submit-btn {
         width: 350px;
+    }
+}
+
+@media ($dekstop-width) {
+    .to-basket-modal {
+        margin-left: 292px;
+        top: 1110px;
     }
 }

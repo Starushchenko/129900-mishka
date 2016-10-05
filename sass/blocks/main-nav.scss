@@ -1,12 +1,14 @@
 @import "../global/variables.scss";
 @import "../global/mixins.scss";
+
+
+
 .main-nav__list,
 .main-nav__user-list {
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    display: none;
 }
 
 .main-nav__item,
@@ -79,6 +81,42 @@
         color: #b2b2b2;
     }
 }
+
+.main-nav--opened {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    background: #ffffff;
+}
+
+.main-nav--closed {
+    display: none;
+}
+
+.main-nav--nojs {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media ($tablet-width) {
