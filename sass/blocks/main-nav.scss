@@ -94,6 +94,14 @@
     display: none;
 }
 
+@media ($tablet-width) {
+    .main-nav--closed, .main-nav--opened {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
+
 .main-nav--nojs {
     display: flex;
     flex-direction: column;

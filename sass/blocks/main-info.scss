@@ -44,18 +44,21 @@
     right: 36px;
     top: 24px;
 }
+
 .main-info__products-link:hover {
     &:after {
         opacity: 1;
     }
 }
+
 .main-info__products-link:active {
     &:after {
         opacity: 0.3;
     }
-    & a {
-        opacity: 0.3;
-    }
+}
+
+.main-info__products-link:active a {
+    opacity: 0.3;
 }
 
 .main-info__children-products-link:after {
