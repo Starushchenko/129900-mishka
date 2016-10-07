@@ -2,9 +2,18 @@ var buyLink = document.querySelector(".order-button");
 var overlay = document.querySelector(".modal-overlay");
 var modal = document.querySelector(".to-basket-modal");
 var menuButton = document.querySelector(".page-header__menu-toggle");
+var menuButtonOpened = document.querySelector(".page-header__menu-toggle--opened");
 var menu = document.querySelector(".main-nav");
 var mapNojs = document.querySelector(".contacts__map-nojs");
 
+    function hideNojs() {
+        menu.classList.remove("main-nav--nojs");
+        menu.classList.add("main-nav--closed");
+        menuButton.classList.add("page-header__menu-toggle--closed");
+        mapNojs.classList.add("contacts__map-hide");
+    }
+
+    hideNojs();
     buyLink.addEventListener("click", function(event) {
         event.preventDefault();
         modal.classList.add("to-basket-modal--show");
@@ -22,15 +31,16 @@ var mapNojs = document.querySelector(".contacts__map-nojs");
         menu.classList.remove("main-nav--closed");
         menu.classList.add("main-nav--opened");
         menuButton.classList.remove("page-header__menu-toggle--closed");
+        menuButton.classList.add("page-header__menu-toggle--opened");
         });
 
-   function hideNojs() {
-        menu.classList.remove("main-nav--nojs");
+    menuButtonOpened.addEventListener("click", function(event) {
+        event.preventDefault();
+        menu.classList.remove("main-nav--opened");
         menu.classList.add("main-nav--closed");
+        menuButton.classList.remove("page-header__menu-toggle--opened");
         menuButton.classList.add("page-header__menu-toggle--closed");
-        mapNojs.classList.add("contacts__map-hide");
-        mapPointNojs.classList.add("contacts__map-hide");
-    }
+        });
 
-    hideNojs();
+
 
