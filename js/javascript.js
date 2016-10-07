@@ -3,6 +3,7 @@ var overlay = document.querySelector(".modal-overlay");
 var modal = document.querySelector(".to-basket-modal");
 var menuButton = document.querySelector(".page-header__menu-toggle");
 var menu = document.querySelector(".main-nav");
+var mapNojs = document.querySelector(".contacts__map-nojs");
 
     buyLink.addEventListener("click", function(event) {
         event.preventDefault();
@@ -16,18 +17,20 @@ var menu = document.querySelector(".main-nav");
         overlay.classList.remove("modal-overlay--show");
         });
 
-   function hideNojs() {
-        menu.classList.remove("main-nav--nojs");
-        menu.classList.add("main-nav--closed");
-        menuButton.classList.add("page-header__menu-toggle--closed");
-    }
-
-    hideNojs();
-
-
     menuButton.addEventListener("click", function(event) {
         event.preventDefault();
         menu.classList.remove("main-nav--closed");
         menu.classList.add("main-nav--opened");
         menuButton.classList.remove("page-header__menu-toggle--closed");
         });
+
+   function hideNojs() {
+        menu.classList.remove("main-nav--nojs");
+        menu.classList.add("main-nav--closed");
+        menuButton.classList.add("page-header__menu-toggle--closed");
+        mapNojs.classList.add("contacts__map-hide");
+        mapPointNojs.classList.add("contacts__map-hide");
+    }
+
+    hideNojs();
+
