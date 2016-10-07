@@ -5,8 +5,9 @@
     border-top: 1px solid #c7c7c7;
     background: #ffffff;
     text-align: center;
-    position: absolute;
-    top: 1400px;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
     box-shadow: 0 5px 25px -2px rgba(0, 0, 0, 0.4);
     z-index: 3;
     display: none;
@@ -97,7 +98,6 @@
         width: 568px;
         min-height: 336px;
         border: 1px solid #c7c7c7;
-        top: 1530px;
         margin-left: 101px;
     }
     .to-basket-modal__title {
@@ -129,6 +129,5 @@
 @media ($dekstop-width) {
     .to-basket-modal {
         margin-left: 292px;
-        top: 1110px;
     }
 }
