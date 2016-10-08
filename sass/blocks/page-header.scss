@@ -35,7 +35,7 @@
 }
 
 .page-header__menu-toggle--closed {
-    background-image: url(../../img/icon-menu-open.svg);
+    background-image: url(../img/icon-menu-open.svg);
     height: 14px;
     width: 20px;
     border: none;
@@ -45,15 +45,8 @@
     background-color: #ffffff;
 }
 
-.page-header__menu-toggle--opened {
-    background-image: url(../img/icon-menu-close.svg);
-    height: 21px;
-    width: 21px;
-    border: none;
-    position: absolute;
-    right: 30px;
-    top: 28px;
-    background-color: #ffffff;
+.page-header__menu-toggle--closed + .main-nav {
+    display: none;
 }
 
 .page-header__delivery-info {
@@ -93,6 +86,9 @@
         right: 50px;
         top: 90px;
     }
+    .page-header__menu-toggle--closed + .main-nav {
+        display: flex;;
+    }
 }
 
 @media ($dekstop-width) {
@@ -109,7 +105,7 @@
         left: 441px;
         padding: 9px;
         border: none;
-        min-width: 270px;
+        min-width: 70px;
     }
     .page-header__logo-link {
         width: 149px;

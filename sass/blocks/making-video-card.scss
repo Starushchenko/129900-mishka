@@ -4,7 +4,8 @@
     min-width: 260px;
     text-align: left;
     border: 1px solid #ececec;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    margin-top: 1px;
     display: flex;
     flex-direction: column;
     &:hover {
@@ -67,10 +68,13 @@
 
 .making-video-card__order-button {
     text-decoration: none;
+    text-align: center;
     display: block;
     margin: 0 34px;
     width: auto;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    font-size: 17px;
+    line-height: 16px;
 }
 
 @media ($tablet-width) {

@@ -4,7 +4,7 @@
     min-width: 260px;
     text-align: left;
     border: 1px solid #ececec;
-    margin-bottom: 29px;
+    margin-bottom: 28px;
     &:hover {
         box-shadow: 0 2px 35px -5px rgba(0, 0, 0, 0.5);
     }
@@ -65,8 +65,8 @@
 .product-card__to-basket-btn {
     display: inline-block;
     position: absolute;
-    right: 28px;
-    bottom: 25px;
+    right: 27px;
+    bottom: 32px;
     width: 21px;
     height: 19px;
     z-index: 3;
@@ -123,8 +123,8 @@
         margin-bottom: 0;
     }
     .product-card__to-basket-btn {
-        bottom: 27px;
-        right: 33px;
+        bottom: 31px;
+        right: 32px;
     }
 }
 
@@ -166,8 +166,8 @@
         margin-left: 25px;
     }
     .product-card__to-basket-btn {
-        bottom: -1px;
-        right: 31px;
+        bottom: 4px;
+        right: 30px;
     }
     .product-card__big-title .product-card__title {
         padding-right: 50px;
