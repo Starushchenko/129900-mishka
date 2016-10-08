@@ -94,40 +94,18 @@
     display: none;
 }
 
+.main-nav--nojs {
+    display: flex;
+    flex-direction: column;
+}
+
 @media ($tablet-width) {
     .main-nav--closed, .main-nav--opened {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
     }
-}
 
-.main-nav--nojs {
-    display: flex;
-    flex-direction: column;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media ($tablet-width) {
     .main-nav__list,
     .main-nav__user-list {
         margin: 0;
@@ -258,6 +236,10 @@
     .main-nav__search a {
         font-size: 0;
     }
+    .main-nav__search a:hover::before {
+        background-image: url("../img/icon-search-green.svg");
+    }
+
     .main-nav__dekstop-list {
         display: flex;
         margin: 0;
