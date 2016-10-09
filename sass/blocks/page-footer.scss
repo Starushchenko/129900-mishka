@@ -26,6 +26,7 @@
     display: inline-block;
     font-size: 0;
 }
+
 .page-footer__social-btn svg {
     fill: #231F20;
     &:hover {
@@ -34,7 +35,6 @@
     &:active {
         fill: #bde3dd;
     }
-
 }
 
 .page-footer__social-btn--inst {
@@ -62,20 +62,22 @@
     padding: 22px 0 34px;
     margin-left: -4px;
 }
+
 .page-footer__developer-link {
     text-decoration: none;
     color: $header-text-color;
 }
-.page-footer__developer-link:hover {
-    & svg {
-        fill: #46c1ae;
-    }
+
+.page-footer__developer-link:hover svg {
+    fill: #46c1ae;
 }
+
 .page-footer__developer-link:active {
     color: #a8a8a8;
-    & svg {
-        fill: #bde3dd;
-    }
+}
+
+.page-footer__developer-link:active svg {
+    fill: #bde3dd;
 }
 
 .page-footer__academy-logo {
@@ -90,7 +92,6 @@
 .page-footer__academy-logo svg {
     fill: #63d1bb;
 }
-
 
 @media ($tablet-width) {
     .page-footer {

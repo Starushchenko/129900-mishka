@@ -4,12 +4,12 @@
     min-width: 260px;
     text-align: left;
     border: 1px solid #ececec;
-    margin-bottom: 29px;
+    margin-bottom: 28px;
     &:hover {
-        box-shadow: 0 2px 35px -5px rgba(0,0,0, 0.5);
+        box-shadow: 0 2px 35px -5px rgba(0, 0, 0, 0.5);
     }
     &:active {
-        box-shadow: 0 1px 17px -5px rgba(0,0,0, 0.5);
+        box-shadow: 0 1px 17px -5px rgba(0, 0, 0, 0.5);
     }
 }
 
@@ -65,18 +65,21 @@
 .product-card__to-basket-btn {
     display: inline-block;
     position: absolute;
-    right: 28px;
-    bottom: 25px;
+    right: 27px;
+    bottom: 32px;
     width: 21px;
     height: 19px;
     z-index: 3;
 }
+
 .product-card__to-basket-btn svg {
     fill: #d3d2d2;
 }
+
 .product-card__to-basket-btn:hover svg {
     fill: #63d1bb;
 }
+
 .product-card__to-basket-btn:active svg {
     fill: #d0f1ea;
 }
@@ -99,10 +102,8 @@
         padding-right: 70px;
         margin: 26px 0 4px 26px;
     }
-    .product-card__big-title {
-        & .product-card__properties {
-            padding-bottom: 3px;
-        }
+    .product-card__big-title .product-card__properties {
+        padding-bottom: 3px;
     }
     .product-card__properties {
         width: 275px;
@@ -122,8 +123,8 @@
         margin-bottom: 0;
     }
     .product-card__to-basket-btn {
-        bottom: 27px;
-        right: 33px;
+        bottom: 31px;
+        right: 32px;
     }
 }
 
@@ -165,18 +166,19 @@
         margin-left: 25px;
     }
     .product-card__to-basket-btn {
-        bottom: -1px;
-        right: 31px;
+        bottom: 4px;
+        right: 30px;
     }
-    .product-card__big-title {
-        & .product-card__title {
-            padding-right: 50px;
-        }
-        & .product-card__properties {
-            padding-bottom: 15px;
-        }
-        & .product-card__price {
-            margin-left: 29px;
-        }
+    .product-card__big-title .product-card__title {
+        padding-right: 50px;
+    }
+    .product-card__big-title .product-card__title {
+        padding-right: 50px;
+    }
+    .product-card__big-title .product-card__properties {
+        padding-bottom: 15px;
+    }
+    .product-card__big-title .product-card__price {
+        margin-left: 29px;
     }
 }

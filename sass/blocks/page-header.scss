@@ -12,6 +12,7 @@
     padding: 22px 0;
     border-bottom: 1px solid #ececec;
     display: flex;
+    z-index: 3;
 }
 
 .page-header__logo-link {
@@ -23,6 +24,17 @@
 }
 
 .page-header__menu-toggle {
+    background-image: url(../img/icon-menu-close.svg);
+    height: 21px;
+    width: 21px;
+    border: none;
+    position: absolute;
+    right: 30px;
+    top: 28px;
+    background-color: #ffffff;
+}
+
+.page-header__menu-toggle--closed {
     background-image: url(../img/icon-menu-open.svg);
     height: 14px;
     width: 20px;
@@ -31,6 +43,10 @@
     right: 30px;
     top: 32px;
     background-color: #ffffff;
+}
+
+.page-header__menu-toggle--closed + .main-nav {
+    display: none;
 }
 
 .page-header__delivery-info {
@@ -60,7 +76,8 @@
         display: inline-block;
         margin-left: 50px;
     }
-    .page-header__menu-toggle {
+    .page-header__menu-toggle,
+    .page-header__menu-toggle--closed {
         display: none;
     }
     .page-header__delivery-info {
@@ -68,6 +85,9 @@
         position: absolute;
         right: 50px;
         top: 90px;
+    }
+    .page-header__menu-toggle--closed + .main-nav {
+        display: flex;;
     }
 }
 
@@ -85,10 +105,22 @@
         left: 441px;
         padding: 9px;
         border: none;
+        min-width: 70px;
     }
     .page-header__logo-link {
         width: 149px;
         height: 73px;
+    }
+    .page-header__logo-link:hover span {
+        display: none;
+    }
+    .page-header__logo-link:hover {
+        background: url("../img/logo-desktop-hover.svg");
+        width: 148px;
+    }
+    .page-header__logo-link:active {
+        background: url("../img/logo-desktop-active.svg");
+        width: 148px;
     }
     .page-header__menu-toggle {
         display: none;
