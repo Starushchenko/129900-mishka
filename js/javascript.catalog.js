@@ -27,14 +27,20 @@ buyLink.addEventListener("click", function (event) {
     overlay.classList.add("modal-overlay--show");
 });
 
+buyLink2.addEventListener("click", function (event) {
+    event.preventDefault();
+    modal.classList.add("to-basket-modal--show");
+    overlay.classList.add("modal-overlay--show");
+});
+
+buyLink3.addEventListener("click", function (event) {
+    event.preventDefault();
+    modal.classList.add("to-basket-modal--show");
+    overlay.classList.add("modal-overlay--show");
+});
+
 overlay.addEventListener("click", function (event) {
     event.preventDefault();
     modal.classList.remove("to-basket-modal--show");
     overlay.classList.remove("modal-overlay--show");
 });
-
-function hideMapNojs() {
-    mapNojs.classList.add("contacts__map-hide");
-}
-
-hideMapNojs();
