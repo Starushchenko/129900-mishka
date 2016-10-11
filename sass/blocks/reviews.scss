@@ -1,6 +1,22 @@
 @import "../global/variables.scss";
 @import "../global/mixins.scss";
 .reviews {
+    width: 100%;
+    background: #ffffff;
+    position: relative;
+}
+.reviews:after {
+    content: "";
+    position: absolute;
+    background: url("../img/bg-zigzag-line.svg") repeat-x;
+    background-size: 320px 7px;
+    width: 100%;
+    height: 23px;
+    bottom: -65px;
+    left: 0;
+    right: 0;
+}
+.reviews__wrapper {
     @include mobile-container;
     margin-bottom: 60px;
 }
@@ -76,7 +92,18 @@
 }
 
 @media ($tablet-width) {
-    .reviews {
+    .reviews:after {
+        content: "";
+        position: absolute;
+        background: url("../img/bg-zigzag-line.svg") repeat-x;
+        background-size: 768px 16px;
+        width: 100%;
+        height: 23px;
+        bottom: -85px;
+        left: 0;
+        right: 0;
+}
+    .reviews__wrapper {
         width: 768px;
         min-height: 460px;
         padding: 40px 50px 0;
@@ -135,7 +162,12 @@
 }
 
 @media ($dekstop-width) {
-    .reviews {
+    .reviews:after {
+        background-size: 1150px 23px;
+        width: 100%;
+        bottom: -85px;
+}
+    .reviews__wrapper {
         width: 1150px;
         margin-top: 36px;
         background-position: 50px;

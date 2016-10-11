@@ -1,6 +1,11 @@
 @import "../global/variables.scss";
 @import "../global/mixins.scss";
 .product-of-week {
+    width: 100%;
+    background: #ffffff;
+    position: relative;
+}
+.product-of-week__wrapper {
     background: $main-bg-color;
     @include mobile-container;
     padding-top: 4px;
@@ -11,12 +16,13 @@
 .product-of-week:after {
     content: "";
     position: absolute;
-    background: url("../img/bg-zigzag-line.svg") no-repeat;
+    background: url("../img/bg-zigzag-line.svg") repeat-x;
     background-size: 320px 7px;
-    width: 320px;
+    width: 100%;
     height: 23px;
-    bottom: -49px;
+    bottom: -55px;
     left: 0;
+    right: 0;
 }
 
 .product-of-week__header {
@@ -83,7 +89,7 @@
 }
 
 @media ($tablet-width) {
-    .product-of-week {
+    .product-of-week__wrapper {
         width: 768px;
         padding: 10px 50px 0;
         display: flex;
@@ -93,12 +99,13 @@
     .product-of-week:after {
         content: "";
         position: absolute;
-        background: url("../img/bg-zigzag-line.svg") no-repeat;
+        background: url("../img/bg-zigzag-line.svg") repeat-x;
         background-size: 768px 16px;
-        width: 768px;
+        width: 100%;
         height: 23px;
         bottom: -52px;
         left: 0;
+        right: 0;
     }
     .product-of-week__header {
         flex-direction: row;
@@ -135,10 +142,8 @@
     }
     .product-of-week__photo-wrapper {
         margin-top: 26px;
-        /*------------- Убрать позже -----------*/
         width: 334px;
         height: 405px;
-        /*--------------------------------------*/
     }
     .product-of-week__order-form {
         width: 50%;
@@ -158,14 +163,14 @@
 }
 
 @media ($dekstop-width) {
-    .product-of-week {
+    .product-of-week__wrapper {
         width: 1150px;
         margin-bottom: 95px;
         min-height: 636px;
     }
     .product-of-week:after {
         background-size: 1150px 23px;
-        width: 1150px;
+        width: 100%;
         bottom: -74px;
     }
     .product-of-week__header {
@@ -194,10 +199,8 @@
     .product-of-week__photo-wrapper {
         margin-left: 4px;
         margin-bottom: 20px;
-        /*------------- Убрать позже -----------*/
         width: 524px;
         height: 636px;
-        /*--------------------------------------*/
     }
     .product-of-week__order-form {
         width: 292px;

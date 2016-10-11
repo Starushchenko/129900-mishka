@@ -1,6 +1,10 @@
 @import "../global/variables.scss";
 @import "../global/mixins.scss";
 .page-header {
+    width: 100%;
+    background: #ffffff;
+}
+.page-header__wrapper {
     width: 320px;
     margin: 0 auto;
     position: relative;
@@ -55,7 +59,7 @@
 }
 
 @media ($tablet-width) {
-    .page-header {
+    .page-header__wrapper {
         width: 768px;
         margin: 0 auto;
         position: relative;
@@ -94,7 +98,7 @@
 }
 
 @media ($dekstop-width) {
-    .page-header {
+    .page-header__wrapper {
         width: 1150px;
         margin: 0 auto;
         position: relative;

@@ -1,6 +1,10 @@
 @import "../global/variables.scss";
 @import "../global/mixins.scss";
 .page-footer {
+    width: 100%;
+    background: #f1f1f1;
+}
+.page-footer__wrapper {
     @include mobile-container;
     background-color: #f1f1f1;
     text-align: center;
@@ -94,7 +98,7 @@
 }
 
 @media ($tablet-width) {
-    .page-footer {
+    .page-footer__wrapper {
         width: 768px;
         padding: 0 50px;
         flex-direction: row;
@@ -130,7 +134,7 @@
 }
 
 @media ($dekstop-width) {
-    .page-footer {
+    .page-footer__wrapper {
         width: 1150px;
         padding: 0;
     }
