@@ -37,6 +37,7 @@
     left: 35px;
     top: 30px;
     display: inline-block;
+    vertical-align: middle;
 }
 
 .main-nav__search a:hover::before {
@@ -56,6 +57,7 @@
     left: 33px;
     top: 29px;
     display: inline-block;
+    vertical-align: middle;
 }
 
 .main-nav__basket a:hover::before {
@@ -132,6 +134,7 @@
         border: none;
         background: none;
         display: inline-block;
+        vertical-align: middle;
         padding-left: 15px;
     }
     .main-nav__user-item {
@@ -157,6 +160,7 @@
     }
     .main-nav__item a {
         display: inline-block;
+        vertical-align: baseline;
         font-size: 15px;
         line-height: 24px;
         margin-left: 11px;
@@ -176,6 +180,7 @@
         left: 33px;
         top: 36px;
         display: inline-block;
+        vertical-align: middle;
     }
     .main-nav__basket a::before {
         content: "";
@@ -186,6 +191,7 @@
         left: 30px;
         top: 33px;
         display: inline-block;
+        vertical-align: middle;
     }
     .main-nav__dekstop-list {
         display: none;
@@ -252,6 +258,7 @@
         border: none;
         background: none;
         display: inline-block;
+        vertical-align: middle;
     }
     .main-nav__dekstop-item a {
         text-decoration: none;

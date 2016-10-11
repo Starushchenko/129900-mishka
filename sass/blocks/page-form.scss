@@ -34,6 +34,7 @@
 
 .page-form__require-message {
     display: inline-block;
+    vertical-align: top;
     width: 270px;
     margin-left: -3px;
     font-size: 14px;
@@ -91,6 +92,7 @@
     }
     .page-form__require-message-tablet {
         display: inline-block;
+        vertical-align: middle;
         font-size: 17px;
         text-align: right;
         width: 50%;
@@ -105,6 +107,7 @@
     }
     .page-form__submit {
         display: inline-block;
+        vertical-align: middle;
         width: 230px;
     }
 }

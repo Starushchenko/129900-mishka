@@ -45,6 +45,7 @@
 
 .product-card__price-wrapper {
     display: inline-block;
+    vertical-align: middle;
     margin-bottom: 20px;
     margin-top: 11px;
 }
@@ -64,6 +65,7 @@
 
 .product-card__to-basket-btn {
     display: inline-block;
+    vertical-align: middle;
     position: absolute;
     right: 27px;
     bottom: 32px;
@@ -116,6 +118,7 @@
     .product-card__price-wrapper {
         margin-bottom: -75px;
         padding: 0;
+        vertical-align: baseline;
     }
     .product-card__price {
         font-size: 17px;
@@ -154,12 +157,18 @@
     }
     .product-card__properties {
         display: inline-block;
+        vertical-align: middle;
         overflow: hidden;
         width: 260px;
         min-height: 0;
         padding-bottom: 38px;
         margin: 0 33px 0 27px;
     }
+    .product-card__price-wrapper {
+        vertical-align: baseline;
+        margin-top: 20px;
+    }
+
     .product-card__price {
         font-size: 17px;
         margin-top: 5px;

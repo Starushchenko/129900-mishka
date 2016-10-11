@@ -52,6 +52,7 @@
     line-height: 18px;
     color: $header-text-color;
     display: inline-block;
+    vertical-align: middle;
     width: 200px;
     margin-bottom: 20px;
     margin-left: 58px;
@@ -83,6 +84,7 @@
     width: 35px;
     height: 35px;
     display: inline-block;
+    vertical-align: middle;
     border: 2px solid #444444;
     border-radius: 50%;
     position: absolute;
@@ -124,6 +126,7 @@
     font-size: 17px;
     line-height: 18px;
     display: inline-block;
+    vertical-align: middle;
     margin-bottom: 27px;
     margin-top: -5px;
 }
@@ -181,12 +184,14 @@
     line-height: 18px;
     color: $header-text-color;
     display: inline-block;
+    vertical-align: middle;
     width: 100%;
     margin-bottom: 23px;
 }
 
 .form-block__name-item span {
     display: inline-block;
+    vertical-align: middle;
     margin-bottom: 2px;
 }
 
@@ -197,6 +202,7 @@
     font-weight: normal;
     width: 100%;
     display: inline-block;
+    vertical-align: middle;
     padding: 12px 0;
     &:hover {
         border-bottom: 2px solid #62d1ba;
@@ -235,6 +241,7 @@
     min-height: 53px;
     padding-top: 11px;
     display: inline-block;
+    vertical-align: middle;
     &:hover {
         border-bottom: 2px solid #62d1ba;
     }
@@ -286,6 +293,7 @@
     min-height: 53px;
     padding-top: 11px;
     display: inline-block;
+    vertical-align: middle;
     margin-bottom: 36px;
     &:hover {
         border-bottom: 2px solid #62d1ba;
@@ -489,6 +497,7 @@
         width: 500px;
         background: #f1f1f1;
         display: inline-block;
+        vertical-align: middle;
     }
     .form-block__email-input {
         min-height: 0px;
@@ -500,6 +509,7 @@
         width: 500px;
         background: #f1f1f1;
         display: inline-block;
+        vertical-align: middle;
     }
     .form-block__wishes-input {
         width: 100%;
@@ -632,6 +642,7 @@
     .form-block__tel-input {
         min-height: 0;
         display: inline-block;
+        vertical-align: middle;
         border: none;
         border-bottom: 2px solid #000000;
         font-size: 17px;
@@ -644,6 +655,7 @@
         min-height: 0;
         margin-bottom: 0;
         display: inline-block;
+        vertical-align: middle;
         border: none;
         border-bottom: 2px solid #000000;
         font-size: 17px;
